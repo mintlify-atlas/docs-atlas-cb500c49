@@ -1,122 +1,116 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Startup Starter Pack",
+  "theme": "linden",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#94cb04",
+    "light": "#545454",
+    "dark": "#94cb04"
   },
   "favicon": "/favicon.svg",
+  "navbar": {
+    "primary": {
+      "type": "github",
+      "href": "https://github.com/Ro5s/Startup-Starter-Pack"
+    }
+  },
+  "footer": {
+    "socials": {
+      "github": "https://github.com/Ro5s/Startup-Starter-Pack"
+    }
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Overview",
+            "pages": ["introduction", "getting-started"]
+          },
+          {
+            "group": "Founders",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "founders/founder-accord",
+              "founders/code-of-conduct"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Formation",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "formation/incorporation",
+              "formation/llc-formation",
+              "formation/certificate-of-incorporation",
+              "formation/bylaws",
+              "formation/operating-agreement"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Financing",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "financing/overview",
+              "financing/term-sheets",
+              "financing/safe-agreements",
+              "financing/convertible-notes",
+              "financing/shared-earnings-agreement",
+              "financing/stock-purchase-agreements",
+              "financing/board-consent",
+              "financing/stockholder-consent"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Business Essentials",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "business/advisor-agreements",
+              "business/innovators-patent-agreement",
+              "business/mutual-nda",
+              "business/terms-of-use",
+              "business/privacy-policy",
+              "business/sales-agreement"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "Document Library",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "Series Seed",
             "pages": [
-              "api-reference/introduction"
+              "library/series-seed/overview",
+              "library/series-seed/term-sheet-equity",
+              "library/series-seed/term-sheet-convertible",
+              "library/series-seed/preferred-stock-investment",
+              "library/series-seed/convertible-note",
+              "library/series-seed/board-consent",
+              "library/series-seed/stockholder-consent",
+              "library/series-seed/investor-questionnaire"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Y Combinator",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "library/yc/overview",
+              "library/yc/safe-agreements",
+              "library/yc/series-aa-documents"
+            ]
+          },
+          {
+            "group": "NVCA",
+            "pages": [
+              "library/nvca/overview",
+              "library/nvca/series-a-documents"
+            ]
+          },
+          {
+            "group": "Techstars",
+            "pages": [
+              "library/techstars/overview",
+              "library/techstars/series-aa-documents"
             ]
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
-  },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "contextual": {
-    "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+    ]
   }
 }

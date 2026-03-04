@@ -1,0 +1,456 @@
+---
+title: "Convertible Promissory Note"
+description: "The definitive convertible note instrument for Series Seed debt financing, outlining conversion mechanics and holder rights"
+---
+
+## Overview
+
+The Series Seed Convertible Promissory Note is a debt instrument that converts into equity under specified circumstances. It represents a loan from the investor to the company that bears interest and converts into stock upon a qualified financing, maturity, or change of control.
+
+<Warning>
+  This is a legally binding promissory note creating an obligation to repay debt or convert to equity. Both companies and investors should carefully review conversion mechanics and triggering events.
+</Warning>
+
+## Document Information
+
+**Source**: Cooley LLP Series Seed  
+**Format**: Available in [.md](https://github.com/CooleyLLP/seriesseed/blob/master/notes/Series%20Seed%20Notes%20-%20Convertible%20Promissory%20Note.md)  
+**Documentation Generator**: [cooleygo.com/seednotes/](https://cooleygo.com/seednotes/)
+
+## Note Structure
+
+The note begins with a securities law legend and includes:
+
+### Header Information
+
+<Accordion title="Key Note Details">
+  **Note Series**: Identifier for this series of notes (e.g., "Seed 2026 Notes")
+  
+  **Date of Note**: Issuance date (starts interest accrual)
+  
+  **Principal Amount**: Dollar amount invested by this Holder
+  
+  **Promise to Pay**: Company promises to pay principal plus interest
+  
+  **Interest Terms**:
+  - Annual rate (typically 2-8%)
+  - Simple or compounded annually
+  - Accrues on outstanding principal
+  - Computed on 365-day year basis
+  
+  **Maturity Date**: When principal and interest become due and payable upon request of Majority Holders
+</Accordion>
+
+## Basic Terms
+
+<Accordion title="Series of Notes">
+  This note is part of a series issued to multiple investors:
+  
+  - Designated by Note Series identifier
+  - May have aggregate cap on total principal amount
+  - Issued in multiple closings to various Holders
+  - Company maintains ledger of all Holders
+  
+  **Majority Holders**: Holders of majority of outstanding principal amount have special rights to:
+  - Request payment at maturity
+  - Elect conversion at maturity (if optional)
+  - Consent to prepayment
+  - Consent to amendments
+  - Declare Events of Default
+</Accordion>
+
+<Accordion title="Payment Terms">
+  **Payment Method**: Lawful money of the United States
+  
+  **Pro Rata Payments**: All payments distributed proportionally among Holders
+  
+  **Application Order**:
+  1. Accrued interest first
+  2. Principal second
+  
+  **Prepayment**: Not permitted prior to Maturity Date without Majority Holder consent
+  
+  <Note>
+    The prohibition on prepayment prevents the company from forcing investors to accept cash repayment when they prefer to maintain conversion rights.
+  </Note>
+</Accordion>
+
+<Accordion title="Most Favored Nations (MFN)">
+  If company issues Other Debt with more favorable material terms:
+  
+  **Process**:
+  1. Company provides written notice within 30 days
+  2. Company provides all documentation for Other Debt
+  3. Holder has 5 days to elect preferable terms
+  4. Company must amend note within 30 days to match Other Debt
+  
+  **Scope**: Amendment makes note "substantially identical" to Other Debt, excluding principal and accrued interest
+  
+  <Warning>
+    MFN provisions can create complexity if you issue notes with varying terms to different investors. Consider keeping terms consistent.
+  </Warning>
+</Accordion>
+
+## Conversion and Repayment
+
+This is the most critical section, defining when and how the note converts:
+
+<Accordion title="Conversion at Qualified Financing">
+  **Trigger**: Company issues Equity Securities to Investors in financing with proceeds of at least specified minimum (commonly $500,000 to $1,500,000)
+  
+  **Conversion Formula**:
+  
+  **Option 1 - Discount Only**:
+  ```
+  Conversion Price = QF Price × Discount Multiplier
+  Example: $1.00 × 0.80 = $0.80 per share (20% discount)
+  ```
+  
+  **Option 2 - Cap and Discount**:
+  ```
+  Conversion Price = Lesser of:
+  (a) QF Price × Discount Multiplier, OR
+  (b) Valuation Cap ÷ Fully-Diluted Shares
+  
+  Example with $5M cap, 10M shares, $1.00 QF price, 20% discount:
+  (a) $1.00 × 0.80 = $0.80
+  (b) $5,000,000 ÷ 10,000,000 = $0.50
+  Conversion Price = $0.50 (cap applies, better for investor)
+  ```
+  
+  **Shares Issued**:
+  ```
+  Shares = (Principal + Accrued Interest) ÷ Conversion Price
+  
+  Example: ($100,000 + $4,000) ÷ $0.50 = 208,000 shares
+  ```
+  
+  **Automatic Conversion**: Occurs automatically without further action by Holder
+  
+  **Securities Received**: Same securities sold in Qualified Financing (or optionally, newly created series with same rights but at conversion price)
+  
+  <Note>
+    When cap applies in an up-round, the company may create a "shadow series" with the same rights as the new preferred but at the discounted conversion price, affecting liquidation preference calculations.
+  </Note>
+</Accordion>
+
+<Accordion title="Optional Conversion at Non-Qualified Financing">
+  If company raises equity that doesn't meet Qualified Financing threshold:
+  
+  **Option 1 - Majority Holders Election**: Holders of majority of notes may elect to treat as Qualified Financing
+  
+  **Option 2 - Individual Holder Election**: Each Holder individually may elect to convert
+  
+  **Timing**: Election must occur on or before Maturity Date (or while note remains outstanding)
+  
+  This flexibility allows conversion even if the round is smaller than originally contemplated.
+</Accordion>
+
+<Accordion title="Conversion at Maturity Date">
+  If note remains outstanding on Maturity Date, three options:
+  
+  **Option 1 - Automatic Conversion**:
+  - Converts automatically without Holder action
+  - Into Common Stock OR newly created Preferred Stock (per Exhibit A)
+  - At predetermined conversion price
+  
+  **Option 2 - Majority Holders Election**:
+  - Majority Holders elect prior to Maturity Date
+  - To convert OR demand repayment
+  
+  **Option 3 - Individual Holder Election**:
+  - Each Holder elects prior to Maturity Date
+  - To convert OR demand repayment
+  
+  **Conversion Price Calculation**:
+  ```
+  Conversion Price = Valuation Cap ÷ Outstanding Common Shares
+  
+  Share count as of:
+  - Maturity Date, OR
+  - Date of Note (specified in note)
+  
+  Includes:
+  - All convertible securities
+  - All outstanding options/warrants
+  - Option pool (if specified)
+  
+  Excludes:
+  - Notes converting in same transaction
+  - Other convertible debt for capital raising (e.g., SAFEs)
+  ```
+  
+  **Example**:
+  ```
+  Cap: $4,000,000
+  Common Shares: 8,000,000
+  Conversion Price: $4,000,000 ÷ 8,000,000 = $0.50/share
+  
+  Note: $100,000 principal + $8,000 interest = $108,000
+  Shares: $108,000 ÷ $0.50 = 216,000 shares
+  ```
+</Accordion>
+
+<Accordion title="Change of Control Conversion">
+  If company is acquired before note converts:
+  
+  **Scenario 1 - Cash Repayment** (mandatory or at Holder election):
+  ```
+  Payment = Principal + Accrued Interest [+ Premium]
+  
+  Example with 50% premium:
+  $100,000 principal + $4,000 interest + $50,000 premium = $154,000
+  ```
+  
+  **Scenario 2 - Conversion Option** (if provided):
+  - Holder elects to convert to Common Stock
+  - At predetermined conversion price (typically cap-based)
+  - Allows participation in acquisition proceeds as stockholder
+  - Election must be made prior to Change of Control (commonly 5 days before)
+  
+  **Change of Control Definition**:
+  1. Merger/consolidation where:
+     - Company not surviving, OR
+     - Pre-transaction shareholders don't hold majority post-transaction
+  
+  2. Transaction(s) transferring more than 50% of voting power
+  
+  3. Sale/transfer of substantially all assets
+  
+  4. Exclusive license of substantially all IP
+  
+  <Note>
+    Whether Change of Control payment includes a premium (and the premium percentage) is a key negotiation point. Premium compensates investors for early exit.
+  </Note>
+</Accordion>
+
+<Accordion title="Conversion Procedures">
+  To convert:
+  
+  1. **Surrender Note**: Holder delivers original note to Company
+  2. **Execute Documents**: Sign all required documentation
+     - For Qualified Financing: All investor documents
+     - For other conversions: As reasonably required
+  3. **Receive Stock**: Company issues shares
+  
+  **Fractional Shares**: Company pays cash for fractions instead of issuing fractional shares
+  
+  **Interest Accrual Stop**: If Change of Control or Qualified Financing, interest stops accruing up to 10 days before definitive agreement signing
+</Accordion>
+
+## Representations and Warranties
+
+<Accordion title="Company Representations">
+  Company represents and warrants:
+  
+  **Organization and Authority**:
+  - Duly organized, validly existing, in good standing
+  - Has corporate power to issue note
+  - Board approved issuance
+  
+  **Valid Obligation**:
+  - Note is valid and binding
+  - Enforceable per terms (subject to bankruptcy laws)
+  - Conversion Securities validly issuable when converted
+  
+  **Governmental Consents**: All required consents obtained
+  
+  **Compliance with Laws**: No violations that would have Material Adverse Effect
+  
+  **No Conflicts**: Issuance doesn't violate charter, bylaws, or material agreements
+  
+  **No Bad Actors**: No disqualifying events under Rule 506(d)
+  
+  **Securities Law Compliance**: Issuance exempt from registration (assuming Holder rep accuracy)
+  
+  **Use of Proceeds**: For business operations only, not personal use
+</Accordion>
+
+<Accordion title="Holder Representations">
+  Holder represents and warrants:
+  
+  **Investment Intent**: Acquiring for own account, not for distribution
+  
+  **Information and Sophistication**:
+  - Received all requested information
+  - Had opportunity to ask questions
+  - Has knowledge/experience to evaluate investment
+  
+  **Ability to Bear Risk**: Can hold indefinitely and suffer complete loss
+  
+  **Transfer Limitations**: Won't sell unless:
+  - Registered under Securities Act, OR
+  - Opinion of counsel that exemption available, OR
+  - In compliance with Rule 144
+  
+  **Accredited Investor**: Qualifies as accredited investor under Rule 501
+  
+  **No Bad Actor**: Not subject to disqualification events (except with disclosure)
+  
+  **Foreign Investors** (if applicable): Complied with all laws of jurisdiction
+  
+  **Forward-Looking Statements**: Acknowledges projections may not be accurate
+</Accordion>
+
+## Events of Default
+
+<Accordion title="Default Triggers">
+  An Event of Default occurs if:
+  
+  1. **Payment Default**: Company fails to pay principal or interest when due
+  
+  2. **Voluntary Bankruptcy**: Company files bankruptcy, seeks reorganization, or makes assignment for benefit of creditors
+  
+  3. **Involuntary Bankruptcy**: Involuntary petition filed and not dismissed within 60 days, or custodian/receiver appointed
+  
+  **Consequences**:
+  - Note accelerates (at Majority Holders' option)
+  - All principal and interest become immediately due
+  - Company pays Holder's reasonable attorneys' fees and costs
+  - Automatic for bankruptcy events (no notice required)
+  
+  <Warning>
+    An Event of Default can have serious consequences. Companies should ensure they can meet payment obligations if notes don't convert.
+  </Warning>
+</Accordion>
+
+## Additional Provisions
+
+<Accordion title="Market Stand-Off">
+  For up to 180 days following Company's IPO:
+  - Holder agrees not to sell Securities
+  - Must enter into underwriter lock-up agreement
+  - Applies only if officers/directors/1% holders similarly bound
+  
+  **Enforcement**:
+  - Company may impose stop transfer instructions
+  - Underwriters are third-party beneficiaries
+</Accordion>
+
+<Accordion title="Amendment and Waiver">
+  **With Holder Consent**: Any term may be amended with Company and Holder written consent
+  
+  **With Majority Holders**: Any term may be amended with Company and Majority Holders consent
+  - Binds all Holders
+  - Company must notify non-consenting Holders
+  
+  <Note>
+    Majority Holders can amend notes to bind all Holders, so minority Holders should pay attention to proposed amendments.
+  </Note>
+</Accordion>
+
+<Accordion title="Senior Indebtedness Subordination">
+  Note is subordinated to Senior Indebtedness:
+  
+  **Senior Indebtedness Definition**:
+  - Bank loans or lending institution debt
+  - Excludes venture capital/investment firms
+  - Includes refinancings and guarantor payments
+  
+  **Effect**: In bankruptcy or liquidation, senior lenders get paid before noteholders
+</Accordion>
+
+<Accordion title="Transfers">
+  Notes may be transferred:
+  - Upon surrender to Company
+  - With proper endorsement
+  - Company reissues in transferee name
+  
+  **Payment to Registered Holder**: Company only obligated to pay registered holder on company records
+</Accordion>
+
+<Accordion title="Governing Law">
+  Governed by Delaware law (typically), without regard to conflicts of law principles
+</Accordion>
+
+## Exhibit A: Terms of Series Preferred Stock
+
+If notes convert at maturity into newly created preferred stock:
+
+<Accordion title="Preferred Stock Rights">
+  **Liquidation Preference**: Original purchase price before common distributions
+  
+  **Conversion**: 
+  - Voluntary at holder's option, 1:1 to common (subject to adjustments)
+  - Automatic upon IPO or majority holder consent
+  
+  **Voting**: Equal to common on as-converted basis
+  
+  **Protective Provisions**: Majority consent required to:
+  - Adversely alter preferred rights
+  - Change authorized shares
+  
+  **Optional Investor Rights**:
+  - Pro rata participation rights (terminates at IPO or after 7 years)
+  - Annual and quarterly financial statements (terminates at IPO)
+  
+  **Market Stand-Off**: 180-day IPO lock-up
+</Accordion>
+
+## Key Considerations
+
+### For Companies
+
+<Accordion title="Company Perspective">
+  **Advantages**:
+  - Quick to close
+  - No immediate valuation needed
+  - Less dilutive initially
+  - Lower legal costs
+  
+  **Risks**:
+  - Creates debt obligation
+  - Interest accrues
+  - May need to repay if no equity round
+  - Can complicate future financings
+  
+  **Best Practices**:
+  - Keep terms consistent across investors
+  - Track all notes and accrued interest
+  - Plan to raise equity before maturity
+  - Model dilution under various scenarios
+</Accordion>
+
+### For Investors
+
+<Accordion title="Investor Perspective">
+  **Advantages**:
+  - Discount to future round
+  - Downside protection (debt instrument)
+  - Senior to equity in liquidation
+  - Potential for significant upside if cap applies
+  
+  **Risks**:
+  - May convert at unfavorable time
+  - Company may fail before conversion
+  - Limited governance rights until conversion
+  - Subordinate to bank debt
+  
+  **Best Practices**:
+  - Understand conversion mechanics thoroughly
+  - Verify accredited investor status
+  - Monitor company progress
+  - Track maturity date
+</Accordion>
+
+## Common Variations
+
+- **Interest Rate**: 2% to 8% annually
+- **Discount**: 15% to 25%
+- **Valuation Cap**: Varies widely based on company stage
+- **Maturity**: 12 to 24 months common
+- **Change of Control Premium**: 0% to 100%+ of principal
+- **MFN Clause**: May be omitted in some cases
+
+## Related Documents
+
+- [Convertible Note Term Sheet](/library/series-seed/term-sheet-convertible) - Non-binding outline
+- [Board Consent (Convertible Note)](/library/series-seed/board-consent) - Board approval
+- [Investor Questionnaire](/library/series-seed/investor-questionnaire) - Accredited investor verification
+
+## Additional Resources
+
+- [CooleyGO Notes Generator](https://cooleygo.com/seednotes/)
+- [GitHub Repository](https://github.com/CooleyLLP/seriesseed)
+- Understanding convertible note conversion mechanics
+- California Corporate Securities Law notice (Section 5.17)

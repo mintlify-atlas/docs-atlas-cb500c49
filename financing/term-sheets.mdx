@@ -1,0 +1,680 @@
+---
+title: Term sheets
+description: Comprehensive guide to term sheets for equity financing and convertible notes, including Series Seed and other standard forms
+---
+
+A term sheet is a non-binding document that outlines the principal terms of a proposed investment. It serves as the foundation for negotiation and the basis for drafting definitive legal agreements.
+
+<Note>
+  Except for specific binding provisions like exclusivity and confidentiality, term sheets are expressions of intent and do not create legally binding obligations until definitive agreements are executed.
+</Note>
+
+## Understanding term sheets
+
+Term sheets bridge the gap between initial investor interest and final documentation. They allow both parties to align on key economic and control terms before investing time and legal fees in comprehensive agreements.
+
+### Why term sheets matter
+
+<AccordionGroup>
+  <Accordion title="Set expectations early" icon="compass">
+    Term sheets establish clear expectations on valuation, investment amount, investor rights, and founder obligations before significant legal costs are incurred.
+  </Accordion>
+  
+  <Accordion title="Framework for negotiation" icon="handshake">
+    They provide a structured format for negotiations, ensuring all critical terms are discussed and agreed upon.
+  </Accordion>
+  
+  <Accordion title="Speed to closing" icon="rocket">
+    With terms agreed upfront, drafting definitive agreements becomes largely mechanical, accelerating the path to closing.
+  </Accordion>
+  
+  <Accordion title="Reference for legal counsel" icon="scale-balanced">
+    Term sheets give attorneys clear direction on deal structure, reducing back-and-forth and legal costs.
+  </Accordion>
+</AccordionGroup>
+
+## Types of term sheets
+
+Different financing instruments require different term sheet structures.
+
+<Tabs>
+  <Tab title="Equity term sheets">
+    Used for direct sales of preferred stock. These establish:
+    
+    - **Valuation:** Pre-money or post-money valuation
+    - **Securities:** Type and amount of preferred stock
+    - **Liquidation preference:** Priority in exit scenarios
+    - **Voting rights:** How preferred stock votes
+    - **Board composition:** Number and selection of directors
+    - **Protective provisions:** Actions requiring investor approval
+    - **Information rights:** Financial reporting obligations
+    - **Participation rights:** Pro rata rights in future rounds
+    
+    **Example sources:**
+    - Series Seed Term Sheet (Equity)
+    - Y Combinator Series AA Term Sheet
+    - NVCA Series A Term Sheet
+  </Tab>
+  
+  <Tab title="Convertible note term sheets">
+    Used for debt that converts to equity at a future qualified financing:
+    
+    - **Principal amount:** Investment size
+    - **Interest rate:** Annual interest (typically 2-8%)
+    - **Maturity date:** When note must be repaid or converted
+    - **Discount:** Conversion discount (typically 15-25%)
+    - **Valuation cap:** Maximum conversion valuation
+    - **Qualified financing threshold:** Minimum raise to trigger conversion
+    - **Change of control:** Treatment on acquisition
+    
+    **Example sources:**
+    - Series Seed Term Sheet (Convertible Note)
+    - Techstars Bridge Term Sheet
+  </Tab>
+  
+  <Tab title="SAFE term sheets">
+    SAFEs are so simple they typically don't require separate term sheets - the SAFE itself serves as the complete agreement. However, some investors may want a summary term sheet covering:
+    
+    - **Investment amount**
+    - **Valuation cap** (if applicable)
+    - **Discount rate** (if applicable)
+    - **Pro rata side letter** (optional)
+    - **MFN provision** (most favored nations)
+    
+    See our [SAFE agreements guide](./safe-agreements) for more details.
+  </Tab>
+</Tabs>
+
+## Key term sheet provisions
+
+Understanding each provision helps you negotiate effectively and protect your interests.
+
+### Economic terms
+
+<Steps>
+  <Step title="Valuation">
+    The pre-money valuation determines what percentage of the company investors receive. For example:
+    
+    - Pre-money valuation: $8M
+    - Investment: $2M
+    - Post-money valuation: $10M
+    - Investor ownership: 20%
+    
+    <Tip>
+      Series Seed documents include an option pool calculation. Make sure you understand whether the option pool comes from pre-money or post-money shares.
+    </Tip>
+  </Step>
+  
+  <Step title="Liquidation preference">
+    Defines the order and amount of payouts in a liquidation event (sale, merger, or dissolution).
+    
+    **Standard Series Seed terms:** 1x non-participating preference
+    - Preferred gets 1x their investment back first
+    - Remaining proceeds distributed to common stock
+    - Preferred can convert to common if that yields more
+    
+    <Warning>
+      Avoid participating preferred with multiple liquidation preferences in early rounds - these can create misaligned incentives and complicate future financings.
+    </Warning>
+  </Step>
+  
+  <Step title="Anti-dilution protection">
+    Protects investors if you raise future rounds at a lower valuation (a "down round").
+    
+    **Series Seed standard:** Broad-based weighted average
+    - More founder-friendly than full ratchet
+    - Adjusts conversion price based on new round size and price
+    - Optional in Series Seed (can be excluded)
+  </Step>
+</Steps>
+
+### Control and governance terms
+
+<AccordionGroup>
+  <Accordion title="Board composition" icon="users">
+    Defines the size and composition of your board of directors.
+    
+    **Typical seed stage structure:**
+    - 1-2 common stock directors (founders)
+    - 0-1 preferred stock directors (lead investor)
+    - 0-1 mutual consent directors (independent)
+    
+    **Series Seed approach:** Flexible based on round size and investor involvement
+    
+    ```example
+    Board of Directors: 3 members
+    - 2 elected by Common Stock (founders)
+    - 1 elected by Series Seed Preferred (lead investor)
+    ```
+  </Accordion>
+  
+  <Accordion title="Protective provisions" icon="shield">
+    Actions that require approval from preferred stockholders, protecting them from adverse changes.
+    
+    **Standard Series Seed protective provisions require preferred majority approval for:**
+    - Changing rights of preferred stock
+    - Creating new senior or pari passu securities
+    - Paying dividends or repurchasing shares (with exceptions)
+    - Changing authorized share numbers
+    - Liquidating or selling the company
+    - Changing board size
+    
+    These are reasonable protections that most investors expect.
+  </Accordion>
+  
+  <Accordion title="Voting rights" icon="check-to-slot">
+    How each class of stock votes on company matters.
+    
+    **Series Seed standard:** Preferred votes with common on as-converted basis
+    - Each preferred share votes as if converted to common
+    - One vote per common share equivalent
+    - Separate class votes only for protective provisions
+    
+    This is the most common and founder-friendly approach.
+  </Accordion>
+</AccordionGroup>
+
+### Investor rights
+
+<CardGroup cols={2}>
+  <Card title="Information rights" icon="chart-line">
+    **Major Purchasers** (typically $25K+ investors) receive:
+    - Annual unaudited financial statements
+    - Quarterly unaudited financial statements
+    - Inspection and visitation rights
+    
+    Small investors typically don't receive these rights to reduce administrative burden.
+  </Card>
+  
+  <Card title="Participation rights" icon="rotate">
+    **Pro rata rights** allow Major Purchasers to maintain their ownership percentage by participating in future rounds.
+    
+    Example: If you own 10% now, you can invest enough in the next round to maintain 10% after that round closes.
+    
+    These rights typically include:
+    - Right to participate pro rata
+    - Overallotment rights if others don't participate
+    - Standard exclusions (employee options, etc.)
+  </Card>
+</CardGroup>
+
+## Series Seed term sheet walkthrough
+
+Let's examine a Series Seed equity term sheet in detail, using the standardized form from Cooley LLP.
+
+### Offering terms
+
+```markdown Series Seed Key Terms
+Securities to Issue: Series Seed Preferred Stock
+Aggregate Proceeds: $[Investment Amount]
+Purchasers: Accredited investors approved by the Company
+Price Per Share: Based on pre-money valuation of $[______]
+  Including [X]% option pool post-money
+```
+
+<Accordion title="Understanding the option pool">
+  The option pool calculation significantly affects founder dilution. 
+  
+  **Example:**
+  - Pre-money valuation: $8M
+  - Investment: $2M
+  - Post-money option pool: 20%
+  
+  **Two calculation methods:**
+  
+  1. **Post-money pool (founder-friendly):**
+     - Investor pays for 20% of their shares to fund the pool
+     - Founder dilution: 20% from investment + portion of pool
+  
+  2. **Pre-money pool (investor-friendly):**
+     - Full 20% pool carved from founder shares before investment
+     - Founder dilution: Higher
+  
+  Series Seed documents default to post-money calculation.
+</Accordion>
+
+### Conversion terms
+
+<Tabs>
+  <Tab title="Voluntary conversion">
+    Each share of Series Seed Preferred is convertible into Common Stock:
+    
+    - **Initial ratio:** 1:1 (subject to adjustments)
+    - **At holder's option:** Any time
+    - **Adjustments:** For stock splits, dividends, combinations
+    - **Optional anti-dilution:** Broad-based weighted average
+  </Tab>
+  
+  <Tab title="Automatic conversion">
+    Preferred automatically converts to common on:
+    
+    - **IPO:** Qualified public offering
+    - **Holder vote:** Majority of preferred approves
+    
+    This ensures preferred shareholders participate in liquidity events.
+  </Tab>
+</Tabs>
+
+### Additional terms
+
+<Steps>
+  <Step title="Financial information">
+    Major Purchasers investing ≥ $[threshold] receive:
+    - Annual unaudited financial statements
+    - Quarterly unaudited financial statements
+    - Standard information and inspection rights
+  </Step>
+  
+  <Step title="Participation right">
+    Major Purchasers have right to participate pro rata in subsequent equity issuances (with standard exceptions).
+  </Step>
+  
+  <Step title="Expenses">
+    Company reimburses purchaser counsel for flat fee of $[5,000-15,000].
+    
+    <Tip>
+      This is standard for seed rounds. The flat fee caps your legal cost exposure for investor counsel.
+    </Tip>
+  </Step>
+  
+  <Step title="Key holder matters">
+    Founders and key employees must:
+    - Have 4-year vesting (with 1-year cliff typical)
+    - Include "Double Trigger" acceleration on change of control
+    - Assign all IP to the company before closing
+  </Step>
+  
+  <Step title="Future rights">
+    Series Seed automatically receives rights given to later series (with appropriate economic adjustments).
+    
+    This protects early investors from being disadvantaged by later rounds.
+  </Step>
+</Steps>
+
+## Convertible note term sheets
+
+Convertible notes are debt instruments that convert to equity at a qualified financing. They're popular for early-stage rounds because they defer valuation negotiations.
+
+### Core provisions
+
+<AccordionGroup>
+  <Accordion title="Principal and interest" icon="dollar-sign">
+    **Principal Amount:** Total investment
+    
+    **Interest Rate:** Typically 2-8% annually
+    - Usually simple interest (not compounded)
+    - Accrues from issuance date
+    - Converts with principal at qualified financing
+    
+    ```example
+    Investment: $100,000
+    Interest: 5% per annum (simple)
+    Time to conversion: 18 months
+    Total converting: $107,500
+    ```
+  </Accordion>
+  
+  <Accordion title="Maturity date" icon="calendar">
+    The date by which the note must be repaid or converted, typically 18-24 months from issuance.
+    
+    **What happens at maturity?**
+    
+    Three common approaches in Series Seed documents:
+    
+    1. **Automatic conversion to equity** (most common)
+       - Converts at pre-set valuation cap
+       - Avoids forcing repayment or default
+    
+    2. **Holder option to convert**
+       - Noteholder chooses conversion or repayment
+       - Company may prefer extension
+    
+    3. **Repayment with approval**
+       - Majority holders can demand repayment
+       - Puts pressure on company to raise or exit
+    
+    <Warning>
+      Make sure your maturity date gives you enough time to raise a qualified financing. 12 months is typically too short; 24 months is safer.
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Qualified financing" icon="trophy">
+    The equity round that triggers automatic conversion.
+    
+    **Typical threshold:** $500K - $1.5M in new investment
+    - Excludes notes converting in the round
+    - Must have "principal purpose of raising capital"
+    - Can't be insider round to game the threshold
+    
+    **Conversion mechanics:**
+    ```example
+    Qualified Financing: Series A at $1.00/share
+    Note discount: 20%
+    Note conversion price: $0.80/share
+    
+    $100,000 note balance converts to:
+    $100,000 ÷ $0.80 = 125,000 shares
+    ```
+  </Accordion>
+  
+  <Accordion title="Conversion discount" icon="percent">
+    Rewards note holders for early risk by giving them a discount to the qualified financing price.
+    
+    **Typical range:** 15-25%
+    - 20% is most common for seed notes
+    - Higher discounts for earlier, riskier investments
+    - Lower discounts with a strong valuation cap
+    
+    **How it works:**
+    - Qualified financing price: $1.00/share
+    - Note discount: 20%
+    - Note conversion price: $0.80/share
+    - Note holders get 25% more shares (1/0.8 = 1.25x)
+  </Accordion>
+  
+  <Accordion title="Valuation cap" icon="chart-line">
+    Sets a maximum effective valuation for conversion, protecting noteholders if your valuation increases significantly.
+    
+    **Example:**
+    
+    Note terms:
+    - Valuation cap: $6M
+    - Discount: 20%
+    
+    Qualified financing:
+    - Price: $2.00/share
+    - Valuation: $12M pre-money
+    - Outstanding shares: 6M
+    
+    **Conversion price calculation:**
+    
+    Option 1 - Using discount:
+    $2.00 × 80% = $1.60/share
+    
+    Option 2 - Using cap:
+    $6M cap ÷ 6M shares = $1.00/share ✓ (better for investor)
+    
+    Note converts at $1.00/share (the cap price)
+    
+    <Tip>
+      Notes typically convert at the **lower** price between the discount and the cap, giving noteholders the better deal.
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Change of control" icon="building">
+    Defines what happens if the company is acquired before a qualified financing.
+    
+    **Common approaches:**
+    
+    1. **Automatic repayment** (most common)
+       - Company repays principal + interest
+       - Optional: +20-50% premium on principal
+    
+    2. **Holder choice**
+       - Noteholder elects: (a) repayment or (b) convert to common at cap
+       - Gives noteholder optionality
+    
+    3. **Automatic conversion**
+       - Converts to common at valuation cap
+       - Noteholder participates in acquisition proceeds
+  </Accordion>
+</AccordionGroup>
+
+### Most Favored Nations (MFN) provision
+
+<Note>
+  MFN provisions ensure that if you issue notes with better terms while existing notes are outstanding, prior noteholders automatically get those better terms.
+</Note>
+
+How MFN works:
+
+1. You issue Note A: 5% interest, 20% discount, $5M cap
+2. Three months later, you issue Note B: 5% interest, 25% discount, $4M cap
+3. Note A's MFN triggers: Note A automatically adopts 25% discount and $4M cap
+
+**Why investors want MFN:**
+- Protects against being disadvantaged by later notes
+- Prevents company from offering better terms to later investors
+- Creates parity among all noteholders
+
+**Founder consideration:**
+- Limits flexibility in later negotiations
+- May need to offer same terms to all or not improve terms at all
+- Can complicate your cap table
+
+## Negotiating term sheets
+
+Effective negotiation balances founder interests with investor requirements while maintaining a collaborative relationship.
+
+### What to negotiate
+
+<Tabs>
+  <Tab title="Always negotiate">
+    **Critical terms that significantly impact your company:**
+    
+    - **Valuation:** Core economic term
+    - **Liquidation preference multiple:** Keep at 1x
+    - **Participation:** Avoid participating preferred
+    - **Board composition:** Maintain founder control when possible
+    - **Protective provisions:** Keep list reasonable
+    - **Vesting acceleration:** Double trigger on change of control
+    - **Option pool size:** Affects founder dilution
+    
+    <Tip>
+      Focus on the terms that matter most for your stage and situation. Don't fight every battle.
+    </Tip>
+  </Tab>
+  
+  <Tab title="Usually standard">
+    **Terms that are typically market standard:**
+    
+    - **1x liquidation preference:** Standard for seed
+    - **Pro rata participation rights:** Expected for Major Purchasers
+    - **Information rights:** Reasonable for investors
+    - **Standard protective provisions:** Normal investor protections
+    - **Market stand-off (lock-up):** Standard 180 days
+    
+    Pushing back on standard terms may signal inexperience or unreasonableness.
+  </Tab>
+  
+  <Tab title="Red flags">
+    **Terms to push back on or avoid:**
+    
+    - **Multiple liquidation preferences (2x, 3x):** Too investor-favorable
+    - **Participating preferred at seed stage:** Creates misalignment
+    - **Full ratchet anti-dilution:** Punitive to founders
+    - **Investor control of board at seed:** Too early for this
+    - **"No-shop" periods > 45 days:** Limits your options too long
+    - **Pay-to-play provisions:** Penalizes investors who don't follow on
+    
+    <Warning>
+      If an investor insists on multiple red flag terms, they may not be the right partner for you.
+    </Warning>
+  </Tab>
+</Tabs>
+
+### Negotiation best practices
+
+<Steps>
+  <Step title="Understand market terms">
+    Research standard terms for your stage, geography, and investor type. The documents in the Startup Starter Pack represent market-standard terms.
+    
+    Resources:
+    - [CooleyGO](https://www.cooleygo.com/) for Silicon Valley norms
+    - [NVCA resources](https://nvca.org/) for standard forms
+    - Your lawyer's recent deal experience
+  </Step>
+  
+  <Step title="Prioritize your issues">
+    Identify your top 3-5 most important points. You won't win every negotiation point.
+    
+    **Example priorities:**
+    1. Keep option pool at 15% (not 20%)
+    2. Four-year vesting with one-year cliff (not monthly from day one)
+    3. Broad-based weighted average anti-dilution (not full ratchet)
+    4. Founder maintains board control until Series A
+    5. Standard protective provisions only
+  </Step>
+  
+  <Step title="Explain your reasoning">
+    When pushing back, explain why:
+    
+    - "We need a 15% option pool because we only have 2 of our 8 key hires made"
+    - "One-year cliff is important because the first year is when we'll know if this works"
+    - "We'd prefer to add an investor board seat at Series A when we'll have more resources to support board meetings"
+    
+    Reasoning is more persuasive than simple rejection.
+  </Step>
+  
+  <Step title="Use your lawyer effectively">
+    Your lawyer can:
+    - Provide market context for each term
+    - Play "bad cop" when needed
+    - Negotiate technical language
+    - Spot issues you might miss
+    
+    <Tip>
+      Have your lawyer review the term sheet before you sign it, not after. Term sheet provisions largely dictate the final documents.
+    </Tip>
+  </Step>
+  
+  <Step title="Document everything in the term sheet">
+    If you negotiate a point, make sure it's reflected in the term sheet. Oral agreements don't bind lawyers drafting documents later.
+    
+    Get amendments to the term sheet in writing before proceeding to definitive documents.
+  </Step>
+</Steps>
+
+## Binding provisions
+
+While most term sheet provisions are non-binding expressions of intent, two sections typically are binding:
+
+<CardGroup cols={2}>
+  <Card title="Exclusivity / No-shop" icon="lock">
+    During the exclusivity period, you agree not to:
+    - Solicit other financing offers
+    - Negotiate with other potential investors
+    - Disclose the terms to other investors
+    
+    **Typical period:** 30-45 days
+    
+    **What happens if you violate:**
+    - Investor can walk away
+    - Potential lawsuit for breach
+    - Reputation damage
+    
+    <Warning>
+      Don't sign a no-shop unless you're serious about closing with this investor. You're taking other options off the table.
+    </Warning>
+  </Card>
+  
+  <Card title="Confidentiality" icon="eye-slash">
+    You agree not to disclose term sheet terms except to:
+    - Officers and directors
+    - Professional advisors (lawyers, accountants)
+    - Other investors in the same round
+    
+    **Duration:** Typically survives indefinitely
+    
+    **Purpose:** 
+    - Protects investor negotiating strategy
+    - Prevents information shopping
+    - Maintains negotiation integrity
+  </Card>
+</CardGroup>
+
+## From term sheet to closing
+
+Once you sign a term sheet, you'll move through these phases:
+
+<Steps>
+  <Step title="Due diligence">
+    Investors will review:
+    - Corporate documents and cap table
+    - Financial statements and projections
+    - Material contracts and IP
+    - Employment agreements
+    - Compliance with laws and regulations
+    
+    **Your job:** Respond promptly and completely to all requests
+    
+    **Timeline:** 2-4 weeks for seed rounds
+  </Step>
+  
+  <Step title="Definitive document drafting">
+    Lawyers will draft:
+    - [Stock Purchase Agreement](./stock-purchase-agreements) or Note Purchase Agreement
+    - Restated Certificate of Incorporation (for equity)
+    - [Board Consent](./board-consent)
+    - [Stockholder Consent](./stockholder-consent)
+    - Investor Rights Agreement (if applicable)
+    
+    **Timeline:** 1-3 weeks depending on complexity
+  </Step>
+  
+  <Step title="Document review and negotiation">
+    Review definitive documents carefully:
+    - Compare to term sheet - they should match
+    - Flag any new provisions not in term sheet
+    - Negotiate any problematic language
+    
+    <Tip>
+      If you used Series Seed or other standard forms in your term sheet, definitive documents should be largely mechanical. Major surprises indicate a problem.
+    </Tip>
+  </Step>
+  
+  <Step title="Board and stockholder approval">
+    Obtain necessary corporate approvals:
+    - Board of Directors approval (always required)
+    - Stockholder approval (required for equity rounds)
+    - Written consents or meeting minutes
+    
+    See our guides on [Board Consent](./board-consent) and [Stockholder Consent](./stockholder-consent).
+  </Step>
+  
+  <Step title="Closing">
+    Execute final documents and exchange:
+    - Investors wire funds
+    - Company delivers stock certificates or updates cap table
+    - File restated certificate of incorporation (for equity)
+    - Update corporate records
+    
+    **Celebration time!** 🎉
+  </Step>
+</Steps>
+
+## Resources and templates
+
+<CardGroup cols={2}>
+  <Card title="Series Seed documents" icon="seedling" href="https://github.com/CooleyLLP/seriesseed">
+    Complete Series Seed package including term sheets, stock purchase agreement, and consents
+  </Card>
+  
+  <Card title="Y Combinator resources" icon="y" href="https://www.ycombinator.com/documents">
+    SAFE agreements and Series AA term sheet templates
+  </Card>
+  
+  <Card title="CooleyGO" icon="rocket" href="https://www.cooleygo.com">
+    Document generators and extensive guides on startup financing
+  </Card>
+  
+  <Card title="NVCA resources" icon="briefcase" href="https://nvca.org/model-legal-documents">
+    Model documents for Series A and later rounds
+  </Card>
+</CardGroup>
+
+## Next steps
+
+<CardGroup cols={3}>
+  <Card title="SAFE agreements" icon="shield" href="./safe-agreements">
+    Learn about Y Combinator's simple alternative to convertible notes
+  </Card>
+  
+  <Card title="Convertible notes" icon="file-invoice" href="./convertible-notes">
+    Deep dive into convertible promissory note terms and mechanics
+  </Card>
+  
+  <Card title="Stock purchase agreements" icon="file-contract" href="./stock-purchase-agreements">
+    Understand the definitive agreements for equity financing
+  </Card>
+</CardGroup>

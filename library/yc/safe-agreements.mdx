@@ -1,0 +1,441 @@
+---
+title: 'SAFE Agreements'
+description: 'Complete guide to Y Combinator Simple Agreement for Future Equity (SAFE) - all four variants explained'
+---
+
+## What is a SAFE?
+
+The **Simple Agreement for Future Equity (SAFE)** is a financing instrument created by Y Combinator in 2013 that allows startups to raise capital quickly and simply without determining a valuation at the time of investment.
+
+<Note>
+The current version is the "post-money SAFE" (2018), which provides clarity on ownership percentages at conversion. This replaced the original "pre-money SAFE" from 2013.
+</Note>
+
+## Key Characteristics
+
+A SAFE has several defining features that distinguish it from traditional financing instruments:
+
+<CardGroup cols={2}>
+  <Card title="Not Debt" icon="circle-xmark">
+    No interest rate, no maturity date, no repayment obligation
+  </Card>
+  <Card title="Not Equity" icon="hourglass">
+    Doesn't grant ownership until a future conversion event
+  </Card>
+  <Card title="Simple" icon="feather">
+    Typically 5-10 pages vs. 30+ for convertible notes
+  </Card>
+  <Card title="Fast" icon="bolt">
+    Can be executed in days rather than weeks
+  </Card>
+</CardGroup>
+
+## How SAFEs Work
+
+<Steps>
+  <Step title="Investment">
+    Investor provides capital to the company in exchange for a SAFE agreement
+  </Step>
+  
+  <Step title="Waiting Period">
+    Company uses the capital to grow. The SAFE remains unconverted.
+  </Step>
+  
+  <Step title="Conversion Event">
+    SAFE converts to equity when:
+    - Company raises a priced equity round (most common)
+    - Company is acquired or undergoes a change of control
+    - IPO (rare for SAFE holders)
+  </Step>
+  
+  <Step title="Equity Issued">
+    SAFE holder receives preferred stock (or common in acquisition) based on SAFE terms
+  </Step>
+</Steps>
+
+<Warning>
+If no conversion event occurs, the SAFE may remain outstanding indefinitely. This is rare but possible, particularly if a company becomes profitable without raising additional rounds.
+</Warning>
+
+## The Four SAFE Variants
+
+Y Combinator provides four different SAFE templates to accommodate different deal structures. Choose the variant that matches your agreement with investors.
+
+<Tabs>
+  <Tab title="Valuation Cap (No Discount)">
+    ### SAFE: Valuation Cap, no Discount
+    
+    **Most Common Variant** - Used in approximately 80% of SAFE financings.
+    
+    #### Key Terms
+    - **Valuation Cap**: Sets maximum valuation for conversion
+    - **No Discount**: Converts at same price as new investors (subject to cap)
+    
+    #### How It Works
+    
+    When the company raises a priced round:
+    
+    1. Calculate conversion price at valuation cap
+    2. Calculate conversion price at round valuation
+    3. SAFE converts at the **lower** price (better for investor)
+    
+    #### Example
+    
+    ```
+    Investment: $100,000
+    Valuation Cap: $10,000,000
+    
+    Future Round:
+    - Pre-money valuation: $20,000,000
+    - Price per share: $2.00
+    
+    Conversion:
+    - SAFE converts at cap valuation ($10M)
+    - Effective price: $1.00 per share
+    - Shares received: 100,000 shares
+    
+    Result: SAFE holder gets 2x the shares of new investors
+    ```
+    
+    #### When to Use
+    
+    <Check>Use when you want upside protection for early investors without complexity of discount rates</Check>
+    
+    #### Download
+    
+    - [Valuation Cap SAFE (.docx)](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Valuation%20Cap%20-%20v1.0.docx)
+    - [Official YC Page](https://www.ycombinator.com/documents/#safe)
+  </Tab>
+  
+  <Tab title="Discount Only">
+    ### SAFE: Discount, no Valuation Cap
+    
+    **Less Common** - Used when investors trust the founders but want some early investor benefit.
+    
+    #### Key Terms
+    - **Discount Rate**: Typically 10-20% (20% is most common)
+    - **No Valuation Cap**: No maximum valuation limit
+    
+    #### How It Works
+    
+    When the company raises a priced round:
+    
+    1. Take the price per share in the new round
+    2. Apply the discount
+    3. SAFE converts at the discounted price
+    
+    #### Example
+    
+    ```
+    Investment: $100,000
+    Discount: 20%
+    
+    Future Round:
+    - Pre-money valuation: $20,000,000
+    - Price per share: $2.00
+    
+    Conversion:
+    - Discount price: $2.00 × (1 - 0.20) = $1.60
+    - Shares received: $100,000 ÷ $1.60 = 62,500 shares
+    
+    Result: SAFE holder pays 80% of what new investors pay
+    ```
+    
+    #### When to Use
+    
+    <Check>Use when investors are comfortable with company trajectory and don't need cap protection</Check>
+    
+    <Warning>
+    Without a cap, investor upside is limited. If company valuation grows substantially, the discount provides minimal benefit.
+    </Warning>
+    
+    #### Download
+    
+    - [Discount Only SAFE (.docx)](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Discount%20Only%20-%20v1.0.docx)
+    - [Official YC Page](https://www.ycombinator.com/documents/#safe)
+  </Tab>
+  
+  <Tab title="Cap and Discount">
+    ### SAFE: Valuation Cap and Discount
+    
+    **Most Investor-Friendly** - Provides maximum protection for early-stage risk.
+    
+    #### Key Terms
+    - **Valuation Cap**: Maximum conversion valuation
+    - **Discount Rate**: Additional benefit (typically 20%)
+    
+    #### How It Works
+    
+    When the company raises a priced round:
+    
+    1. Calculate conversion price using valuation cap
+    2. Calculate conversion price using discount
+    3. SAFE converts at the **lower** price (most favorable to investor)
+    
+    #### Example
+    
+    ```
+    Investment: $100,000
+    Valuation Cap: $10,000,000
+    Discount: 20%
+    
+    Future Round:
+    - Pre-money valuation: $20,000,000
+    - Price per share: $2.00
+    
+    Conversion Options:
+    1. At cap: $1.00 per share → 100,000 shares
+    2. At discount: $1.60 per share → 62,500 shares
+    
+    Result: SAFE converts at cap (better deal)
+    SAFE holder receives 100,000 shares
+    ```
+    
+    #### When to Use
+    
+    <Check>Use when investors are taking significant early-stage risk and want maximum protection</Check>
+    
+    <Warning>
+    This is the most dilutive variant for founders. Use sparingly and typically only for very early investors.
+    </Warning>
+    
+    #### Download
+    
+    - [Cap and Discount SAFE (.docx)](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Valuation%20Cap%20and%20Discount%20-%20v1.0.docx)
+    - [Official YC Page](https://www.ycombinator.com/documents/#safe)
+  </Tab>
+  
+  <Tab title="MFN Only">
+    ### SAFE: MFN, no Valuation Cap, no Discount
+    
+    **Most Founder-Friendly** - Pure bet on the company with "most favored nation" protection.
+    
+    #### Key Terms
+    - **Most Favored Nation (MFN)**: Right to adopt terms of future SAFEs
+    - **No Cap**: No valuation limit
+    - **No Discount**: No price benefit
+    
+    #### How It Works
+    
+    1. SAFE converts at same price as new investors in priced round
+    2. **BUT** if company issues SAFEs with better terms (cap or discount) before the priced round, this SAFE can adopt those terms
+    
+    #### Example
+    
+    ```
+    Month 1:
+    - Investor A: $100,000 MFN SAFE
+    
+    Month 6:
+    - Investor B: $200,000 SAFE with $10M cap
+    
+    Month 12 - Priced Round:
+    - Pre-money valuation: $20,000,000
+    - Price per share: $2.00
+    
+    Result:
+    - Investor A can elect to use Investor B's $10M cap
+    - Investor A converts at $1.00 instead of $2.00
+    - Investor A gets 100,000 shares instead of 50,000
+    ```
+    
+    #### When to Use
+    
+    <Check>Use with trusted investors who believe strongly in the team and don't need immediate protections</Check>
+    
+    <Note>
+    This variant is essentially a "bet on the jockey, not the horse" - the investor is backing the founders' ability to build something valuable.
+    </Note>
+    
+    #### Download
+    
+    - [MFN Only SAFE (.docx)](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20MFN%20Only%20-%20v1.0.docx)
+    - [Official YC Page](https://www.ycombinator.com/documents/#safe)
+  </Tab>
+</Tabs>
+
+## Post-Money vs. Pre-Money SAFEs
+
+In 2018, Y Combinator updated the SAFE from "pre-money" to "post-money" to provide clarity on dilution.
+
+<Accordion title="Key Difference Explained">
+  **Post-Money SAFE (Current)**
+  - Valuation cap refers to post-money valuation (after SAFE investment)
+  - Makes it easy to calculate exact ownership percentage
+  - Formula: Investment ÷ Post-Money Cap = Ownership %
+  
+  **Pre-Money SAFE (Deprecated)**
+  - Valuation cap referred to pre-money valuation (before SAFE investment)
+  - Created ambiguity about final ownership percentages
+  - Could lead to unexpected dilution
+  
+  <Warning>
+  Always use the post-money SAFE (2018 version). The pre-money version is deprecated and should not be used for new investments.
+  </Warning>
+</Accordion>
+
+## Optional: Pro Rata Side Letter
+
+Y Combinator also provides a **Pro Rata Side Letter** that gives SAFE holders the right to participate in future financing rounds to maintain their ownership percentage.
+
+### Key Terms
+
+- Grants right (not obligation) to invest in future rounds
+- Typically used for larger SAFE investments ($100K+)
+- Separate document attached to main SAFE
+
+### Download
+
+- [Pro Rata Side Letter (.docx)](https://www.ycombinator.com/docs/Pro%20Rata%20Side%20Letter.docx)
+
+## Choosing the Right SAFE
+
+<CardGroup cols={2}>
+  <Card title="For Most Deals" icon="star">
+    **Valuation Cap, No Discount**
+    
+    Balances founder and investor interests. Standard market terms.
+  </Card>
+  
+  <Card title="For Confident Investors" icon="handshake">
+    **MFN Only**
+    
+    Shows strong founder support. Minimal immediate dilution.
+  </Card>
+  
+  <Card title="For Uncertain Valuations" icon="chart-line">
+    **Discount Only**
+    
+    Good when company has traction but valuation is unclear.
+  </Card>
+  
+  <Card title="For High-Risk Early Bets" icon="shield">
+    **Cap and Discount**
+    
+    Maximum investor protection. Use for very first investors only.
+  </Card>
+</CardGroup>
+
+## Common Terms & Definitions
+
+<AccordionGroup>
+  <Accordion title="Valuation Cap">
+    The maximum effective valuation at which the SAFE will convert to equity. If the company's actual valuation at the next round exceeds the cap, the SAFE holder converts as if the company were valued at the cap.
+  </Accordion>
+  
+  <Accordion title="Discount Rate">
+    A percentage discount (typically 15-20%) that SAFE holders receive on the price per share paid by new investors in the next equity round.
+  </Accordion>
+  
+  <Accordion title="Conversion Event">
+    A triggering event that causes the SAFE to convert into equity, typically:
+    - Equity Financing (priced round above threshold)
+    - Liquidity Event (acquisition, merger)
+    - IPO (rare)
+  </Accordion>
+  
+  <Accordion title="Post-Money Valuation Cap">
+    The valuation of the company AFTER accounting for the SAFE investment. This is the key feature of the 2018 SAFE update, providing clarity on ownership percentages.
+  </Accordion>
+  
+  <Accordion title="Most Favored Nation (MFN)">
+    A clause allowing the SAFE holder to adopt the terms of any future SAFEs with more favorable terms issued before an equity financing.
+  </Accordion>
+</AccordionGroup>
+
+## Advantages of SAFEs
+
+<CardGroup cols={2}>
+  <Card title="Speed" icon="rocket">
+    Can close in days instead of weeks. Minimal negotiation required.
+  </Card>
+  
+  <Card title="Simplicity" icon="file">
+    5-10 pages vs. 30+ for convertible notes. Easy to understand.
+  </Card>
+  
+  <Card title="Flexibility" icon="shuffle">
+    No maturity date or interest. No pressure to raise next round quickly.
+  </Card>
+  
+  <Card title="Founder-Friendly" icon="user">
+    No debt burden. Post-money structure provides clarity.
+  </Card>
+</CardGroup>
+
+## Potential Drawbacks
+
+<Warning>
+Be aware of these potential issues with SAFEs:
+
+1. **Stacked SAFEs** - Multiple SAFEs with different terms can create complex cap tables
+2. **No Maturity Date** - SAFEs can remain outstanding indefinitely if no conversion event
+3. **Investor Rights** - SAFE holders typically have no voting rights or information rights until conversion
+4. **Liquidation Preference** - In an acquisition before conversion, SAFE holders may not have the same preferences as preferred stockholders
+</Warning>
+
+## Best Practices
+
+<Steps>
+  <Step title="Keep It Simple">
+    Use one SAFE variant for all investors in a given round. Multiple variants create complexity.
+  </Step>
+  
+  <Step title="Track Your Cap Table">
+    Model out how SAFEs will convert under different scenarios. Understand dilution impact.
+  </Step>
+  
+  <Step title="Set Appropriate Caps">
+    Valuation caps should reflect your current stage and traction. Too low = excessive dilution.
+  </Step>
+  
+  <Step title="Consult Legal Counsel">
+    Always have a startup attorney review SAFEs before execution, even though they're standardized.
+  </Step>
+  
+  <Step title="Communicate Clearly">
+    Make sure all parties understand how the SAFE works and when/how it converts.
+  </Step>
+</Steps>
+
+## Resources & Downloads
+
+### Official Y Combinator Resources
+
+<CardGroup cols={2}>
+  <Card title="Official Documents Page" icon="link" href="https://www.ycombinator.com/documents/#safe">
+    Download all four SAFE variants
+  </Card>
+  
+  <Card title="Post Money SAFE User Guide" icon="book" href="https://www.ycombinator.com/docs/Post%20Money%20Safe%20User%20Guide.pdf">
+    Comprehensive 20-page guide to SAFEs
+  </Card>
+  
+  <Card title="SAFE Primer" icon="graduation-cap" href="https://www.ycombinator.com/documents/#safe">
+    Quick introduction to SAFE concepts
+  </Card>
+  
+  <Card title="OpenLaw SAFE Template" icon="code" href="https://app.openlaw.io/template/Y%20Combinator%20SAFE">
+    Automated online SAFE generation
+  </Card>
+</CardGroup>
+
+### Document Templates
+
+All documents are available as Microsoft Word (.docx) files:
+
+1. [SAFE: Valuation Cap, no Discount](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Valuation%20Cap%20-%20v1.0.docx)
+2. [SAFE: Discount, no Valuation Cap](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Discount%20Only%20-%20v1.0.docx)
+3. [SAFE: Valuation Cap and Discount](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20Valuation%20Cap%20and%20Discount%20-%20v1.0.docx)
+4. [SAFE: MFN, no Valuation Cap, no Discount](https://www.ycombinator.com/docs/Postmoney%20Safe%20-%20MFN%20Only%20-%20v1.0.docx)
+5. [Pro Rata Side Letter](https://www.ycombinator.com/docs/Pro%20Rata%20Side%20Letter.docx)
+
+<Note>
+All SAFE documents are provided under an open-source license. However, they should be reviewed by legal counsel before use.
+</Note>
+
+## Related Topics
+
+- [Y Combinator Overview](/library/yc/overview) - Learn about all YC legal documents
+- [Series AA Documents](/library/yc/series-aa-documents) - Equity financing alternative to SAFEs
+- [Convertible Notes](/financing/convertible-notes) - Traditional alternative to SAFEs

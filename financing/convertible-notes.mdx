@@ -1,0 +1,950 @@
+---
+title: Convertible notes
+description: Complete guide to convertible promissory notes for startup financing, including conversion mechanics, terms, and Series Seed documents
+---
+
+Convertible promissory notes are debt instruments that convert to equity at a future financing event. They've been a staple of early-stage startup financing for decades, offering a way to raise capital while deferring valuation discussions.
+
+<Note>
+  A convertible note is debt that automatically converts to equity (usually preferred stock) when you raise a qualified equity financing round. Until conversion, it's a liability on your balance sheet.
+</Note>
+
+## Understanding convertible notes
+
+Convertible notes bridge the gap between needing capital now and being ready to price an equity round later.
+
+### Why companies use convertible notes
+
+<AccordionGroup>
+  <Accordion title="Defer valuation" icon="clock">
+    **The core benefit of convertible notes:**
+    
+    Early-stage companies are difficult to value:
+    - No revenue or minimal traction
+    - Unclear product-market fit
+    - Uncertain market size
+    - High failure risk
+    
+    Convertible notes let you:
+    - Raise capital without setting a valuation
+    - Wait until you have more data (traction, revenue, users)
+    - Let the market set your valuation at Series A
+    - Avoid difficult valuation negotiations
+    
+    <Tip>
+      If you're pre-revenue and pre-product, defending a specific valuation is nearly impossible. Convertible notes make sense.
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Speed to close" icon="bolt">
+    Convertible notes are faster than equity rounds:
+    
+    **Equity rounds require:**
+    - Valuation negotiation
+    - Preferred stock terms negotiation
+    - Board composition agreements
+    - Investor rights agreements
+    - Extensive due diligence
+    - Timeline: 6-12 weeks
+    
+    **Convertible notes require:**
+    - Discount and cap negotiation
+    - Simple note agreement
+    - Basic diligence
+    - Timeline: 2-4 weeks
+  </Accordion>
+  
+  <Accordion title="Bridge financing" icon="bridge">
+    **Common use case: Bridge to Series A**
+    
+    Scenario:
+    - You're 6 months from Series A
+    - You need $500K to get there
+    - Don't want to do a full equity round
+    
+    Solution:
+    - Issue convertible notes to bridge
+    - Notes convert in Series A
+    - Avoids setting intermediate valuation
+    - Keeps cap table clean
+  </Accordion>
+  
+  <Accordion title="Lower legal costs" icon="dollar-sign">
+    Convertible notes typically cost less than equity rounds:
+    
+    **Legal fees:**
+    - Convertible notes: $5,000 - $15,000
+    - Equity round: $15,000 - $40,000
+    
+    The difference matters when you're early-stage and cash-constrained.
+  </Accordion>
+</AccordionGroup>
+
+## Convertible note structure
+
+Convertible notes have several key components that determine their economic terms.
+
+### Principal terms
+
+<Tabs>
+  <Tab title="Principal amount">
+    **The investment amount**
+    
+    - Amount investor pays for the note
+    - Face value of the debt
+    - Earns interest until conversion or repayment
+    
+    **Example:**
+    - Investor purchases note for $100,000
+    - Principal amount: $100,000
+    - This amount will convert to equity (plus accrued interest)
+    
+    Multiple notes can be issued with different principal amounts to different investors.
+  </Tab>
+  
+  <Tab title="Interest rate">
+    **Annual interest accrued on the note**
+    
+    **Typical rates:** 2% - 8% per annum
+    - Most common: 5%
+    - Lower rates: 2-3% (very founder-friendly)
+    - Higher rates: 6-8% (compensate for higher risk or longer maturity)
+    
+    **Interest type:**
+    - **Simple interest (most common):** Calculated only on principal
+    - **Compound interest (rare):** Interest earns interest
+    
+    **How it works:**
+    ```example
+    Principal: $100,000
+    Interest: 5% per annum (simple)
+    Time to conversion: 18 months
+    
+    Interest = $100,000 × 5% × 1.5 years = $7,500
+    Total converting = $107,500
+    ```
+    
+    <Note>
+      Interest converts to equity along with principal. Investors get shares for both the money invested and the interest accrued.
+    </Note>
+  </Tab>
+  
+  <Tab title="Maturity date">
+    **When the note must be repaid or converted**
+    
+    **Typical maturity periods:**
+    - 18 months (common for early notes)
+    - 24 months (safer, gives more time)
+    - 12 months (risky, not recommended)
+    
+    **What happens at maturity:**
+    
+    <Steps>
+      <Step title="Automatic conversion (most common)">
+        Note automatically converts to equity at pre-agreed valuation cap.
+        
+        **Pros:** Avoids repayment crisis
+        **Cons:** Noteholder must accept equity
+      </Step>
+      
+      <Step title="Holder election">
+        Noteholder chooses: (a) demand repayment or (b) convert to equity.
+        
+        **Pros:** Noteholder has optionality
+        **Cons:** Company faces repayment risk
+      </Step>
+      
+      <Step title="Majority holder election">
+        Holders of majority of notes decide for all noteholders.
+        
+        **Pros:** Coordinates decision among multiple notes
+        **Cons:** Individual holder loses control
+      </Step>
+    </Steps>
+    
+    <Warning>
+      Choose your maturity date carefully. If you don't raise a qualified financing before maturity, you face a potential crisis. 18-24 months gives you breathing room.
+    </Warning>
+  </Tab>
+  
+  <Tab title="Qualified financing">
+    **The equity round that triggers automatic conversion**
+    
+    **Typical definition:**
+    - Aggregate proceeds of at least $500K - $1.5M
+    - Excludes notes/SAFEs converting in the round
+    - Principal purpose of raising capital
+    - Cannot be an insider round
+    
+    **Example qualified financing clause:**
+    ```markdown
+    "Qualified Financing" means an equity financing
+    with aggregate proceeds of not less than $1,000,000
+    (excluding conversion of the Notes and other
+    convertible securities).
+    ```
+    
+    **Setting the threshold:**
+    - Too low ($250K): Could trigger on small friends/family round
+    - Too high ($3M): May never trigger, note reaches maturity
+    - Just right ($500K-$1.5M): Triggers on real institutional round
+    
+    <Tip>
+      Set your qualified financing threshold at the size of your expected Series Seed or Series A. This ensures conversion happens at a meaningful round.
+    </Tip>
+  </Tab>
+</Tabs>
+
+### Conversion economics
+
+The discount and cap determine how many shares noteholders receive when converting.
+
+<AccordionGroup>
+  <Accordion title="Discount rate" icon="percent">
+    **Gives noteholders a discount to the qualified financing price**
+    
+    **Standard discount rates:**
+    - 15% - Most common
+    - 20% - Also common
+    - 10% - Lower end, very founder-friendly
+    - 25% - Higher end, more investor-friendly
+    
+    **How it works:**
+    ```example
+    Series A price: $1.00 per share
+    Note discount: 20%
+    Note conversion price: $1.00 × (1 - 0.20) = $0.80
+    
+    $100,000 note converts to:
+    $100,000 ÷ $0.80 = 125,000 shares
+    
+    vs. Series A investor getting:
+    $100,000 ÷ $1.00 = 100,000 shares
+    
+    Noteholder gets 25% more shares for same money
+    ```
+    
+    **Economic rationale:**
+    - Compensates early investor for higher risk
+    - Rewards capital deployed before valuation was known
+    - Standard market practice
+    
+    <Note>
+      If you have both a discount and a cap, notes convert at whichever price gives the noteholder more shares (the lower price).
+    </Note>
+  </Accordion>
+  
+  <Accordion title="Valuation cap" icon="chart-line">
+    **Sets a maximum effective valuation for note conversion**
+    
+    **Why caps exist:**
+    If your valuation increases dramatically between the note and qualified financing, noteholders could get diluted heavily. The cap protects them.
+    
+    **How valuation caps work:**
+    
+    ```example
+    Note terms:
+    - Principal + interest: $105,000
+    - Valuation cap: $6M
+    - Discount: 20%
+    
+    Qualified Financing:
+    - Pre-money valuation: $12M
+    - Price per share: $2.00
+    - Outstanding shares: 6M
+    
+    Option 1 - Using discount:
+    $2.00 × 80% = $1.60 per share
+    $105,000 ÷ $1.60 = 65,625 shares
+    
+    Option 2 - Using cap:
+    Cap price = $6M cap ÷ 6M shares = $1.00 per share
+    $105,000 ÷ $1.00 = 105,000 shares ✓ Better for investor
+    
+    Note converts at $1.00 (cap price)
+    Noteholder gets 105,000 shares
+    ```
+    
+    **Setting the cap:**
+    - Should be 50-70% of expected qualified financing valuation
+    - Too low: Excessive founder dilution
+    - Too high: Doesn't protect noteholder
+    - Typical seed stage: $4M - $10M
+    
+    <Tip>
+      The cap is often more important than the discount. In a successful company, the cap determines conversion price more often than the discount does.
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Conversion mechanics" icon="gears">
+    **How notes convert to equity**
+    
+    <Steps>
+      <Step title="Calculate conversion price">
+        Determine the lower of:
+        1. Qualified financing price × (1 - discount %)
+        2. Valuation cap ÷ fully-diluted shares
+        
+        Noteholders get the lower price (more shares).
+      </Step>
+      
+      <Step title="Determine conversion amount">
+        Total amount converting:
+        - Principal amount
+        - Plus all accrued unpaid interest
+        - As of the conversion date
+        
+        Interest stops accruing 0-10 days before conversion (per note terms).
+      </Step>
+      
+      <Step title="Calculate shares issued">
+        Shares = Conversion Amount ÷ Conversion Price
+        
+        **Example:**
+        - Conversion amount: $107,500
+        - Conversion price: $0.80
+        - Shares issued: 134,375
+        
+        Round down if fractional shares; pay cash for fraction.
+      </Step>
+      
+      <Step title="Determine stock class">
+        **Standard approach:**
+        Notes convert to same class as qualified financing investors (e.g., Series Seed Preferred).
+        
+        **Shadow series approach:**
+        If note conversion price < qualified financing price:
+        - Company may create shadow series (e.g., "Series Seed-1")
+        - Identical rights to Series Seed
+        - Different liquidation preference per share
+        - Liquidation preference = 1× conversion price (not 1× QF price)
+        
+        Check your note agreement to see which approach applies.
+      </Step>
+    </Steps>
+  </Accordion>
+  
+  <Accordion title="Change of control provisions" icon="building">
+    **What happens if you're acquired before a qualified financing**
+    
+    **Option 1: Automatic repayment (most common)**
+    ```markdown
+    Company repays:
+    - Outstanding principal
+    - Plus accrued unpaid interest
+    - Plus optional premium (0-50% of principal)
+    ```
+    
+    **Example:**
+    - Note balance: $107,500 (principal + interest)
+    - Premium: 20% of $100,000 = $20,000
+    - Total payout: $127,500
+    
+    **Option 2: Holder election**
+    Noteholder chooses:
+    - (a) Repayment (principal + interest + premium), OR
+    - (b) Convert to common at valuation cap and participate in acquisition
+    
+    **Option 3: Automatic conversion**
+    - Note converts to common stock at cap
+    - Noteholder participates in acquisition as stockholder
+    - Gets pro rata share of acquisition proceeds
+    
+    <Warning>
+      Make sure your note terms clearly specify change of control treatment. Ambiguity here can derail an acquisition.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## Series Seed convertible note documents
+
+The Series Seed package includes standardized convertible note documents from Cooley LLP.
+
+### Document components
+
+<Tabs>
+  <Tab title="Term sheet">
+    **Non-binding summary of proposed note terms**
+    
+    Key sections:
+    - Financing amount and investors
+    - Interest rate and maturity date
+    - Qualified financing definition
+    - Conversion provisions (discount and/or cap)
+    - Change of control treatment
+    - Optional provisions (MFN, conversion at maturity, etc.)
+    - Documentation reference
+    - Expense allocation
+    
+    See our [term sheets guide](./term-sheets) for detailed guidance.
+    
+    <Note>
+      Series Seed term sheets reference CooleyGO's automated document generator, ensuring consistency between term sheet and final documents.
+    </Note>
+  </Tab>
+  
+  <Tab title="Convertible promissory note">
+    **The actual note agreement signed by company and investor**
+    
+    Structure:
+    1. **Basic Terms**
+       - Principal, interest, maturity
+       - Payment procedures
+       - Prepayment (usually prohibited without majority holder consent)
+       - Most Favored Nations (optional)
+    
+    2. **Conversion and Repayment**
+       - Qualified financing conversion
+       - Optional non-qualified financing conversion
+       - Maturity date conversion
+       - Change of control
+       - Conversion procedures
+    
+    3. **Representations and Warranties**
+       - Company representations (organization, authorization, etc.)
+       - Holder representations (accredited investor, investment purpose)
+    
+    4. **Events of Default**
+       - Failure to pay
+       - Bankruptcy
+       - Consequences and remedies
+    
+    5. **Miscellaneous Provisions**
+       - Transfer restrictions
+       - Market stand-off (IPO lock-up)
+       - Amendment procedures
+       - Governing law
+    
+    Full document: ~15-20 pages
+  </Tab>
+  
+  <Tab title="Board consent">
+    **Board approval to issue convertible notes**
+    
+    Approves:
+    - Issuance of notes up to specified amount
+    - Form of note agreement
+    - Officer authority to execute notes
+    - Reservation of shares for conversion
+    - Securities law compliance
+    
+    See our [board consent guide](./board-consent) for details.
+    
+    <Tip>
+      You need board approval before issuing the first note. Once approved, you can typically issue additional notes in the series without additional board action (within limits).
+    </Tip>
+  </Tab>
+  
+  <Tab title="Investor questionnaire">
+    **Due diligence on investor qualifications**
+    
+    Collects:
+    - Accredited investor status verification
+    - Investment representations
+    - Investor contact information
+    - Residency information (for state securities laws)
+    - Bad actor disqualifications check
+    
+    Required for securities law compliance (Rule 506).
+  </Tab>
+</Tabs>
+
+### Optional provisions
+
+<AccordionGroup>
+  <Accordion title="Most Favored Nations (MFN)" icon="award">
+    **Automatic upgrade to better terms if offered to later noteholders**
+    
+    **How MFN works:**
+    
+    1. You issue Note A: 5% interest, 20% discount, $6M cap, with MFN
+    2. Later, you issue Note B: 5% interest, 25% discount, $5M cap
+    3. Note B has "material terms that are more favorable" to holder
+    4. Company notifies Note A holder
+    5. Note A holder can elect to adopt Note B terms
+    6. Note A is amended to match Note B (except principal/interest already accrued)
+    
+    **Founder implications:**
+    - Limits flexibility to offer different terms to different investors
+    - Can create cap table complexity
+    - May prevent you from improving terms for strategic investors
+    - Standard notification: 30 days to provide notice after new note
+    - Holder election: 5 days to elect after receiving notice
+    
+    **When to accept MFN:**
+    - Very early notes where terms are uncertain
+    - Short duration (e.g., "MFN applies only to notes issued in next 90 days")
+    - Strategic investor where relationship matters more than terms
+    
+    <Warning>
+      MFN provisions can significantly complicate future fundraising. Try to avoid them or limit their duration.
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Conversion at non-qualified financing" icon="code-branch">
+    **Optional conversion if you raise equity below qualified financing threshold**
+    
+    **Example:**
+    - Note defines qualified financing as $1M+
+    - You raise $500K equity round
+    - Not a qualified financing (doesn't auto-convert)
+    - But noteholders may want to convert anyway
+    
+    **Two approaches:**
+    
+    **1. Majority holder option:**
+    - Holders of majority of notes can elect to treat it as qualified financing
+    - All notes convert on same terms
+    - Coordinates group decision
+    
+    **2. Individual holder option:**
+    - Each noteholder decides independently
+    - Creates complexity (some convert, some don't)
+    - Less common
+    
+    <Tip>
+      Include this provision if there's any chance you might raise a smaller equity round before a full Series A.
+    </Tip>
+  </Accordion>
+  
+  <Accordion title="Prepayment restrictions" icon="ban">
+    **Prevents company from repaying notes early without consent**
+    
+    **Standard Series Seed provision:**
+    "The Company may not prepay this Note prior to the Maturity Date without the consent of the Majority Holders."
+    
+    **Why it matters:**
+    - Noteholders want notes to convert (and get equity upside)
+    - Don't want company to repay with cash before conversion
+    - Protects noteholders' conversion option value
+    
+    **Founder perspective:**
+    - Standard and reasonable
+    - If you wanted to repay, you could negotiate
+    - But early repayment rarely makes sense
+    
+    Almost always included. Don't fight this provision.
+  </Accordion>
+  
+  <Accordion title="Information rights" icon="file-chart-column">
+    **Optional reporting obligations to noteholders**
+    
+    **Not standard in Series Seed notes**, but sometimes negotiated:
+    - Annual financial statements
+    - Quarterly updates
+    - Notice of material events
+    
+    **Considerations:**
+    - Adds administrative burden
+    - Noteholders will get info rights after conversion anyway
+    - Large noteholders ($250K+) more justified in asking
+    
+    Generally, try to avoid information rights for notes. They'll get them soon enough when notes convert.
+  </Accordion>
+</AccordionGroup>
+
+## Negotiating convertible note terms
+
+### Key negotiation points
+
+<Steps>
+  <Step title="Interest rate">
+    **Target: 4-6% for most seed-stage notes**
+    
+    **Lower is better for founders:**
+    - Less dilution at conversion
+    - Lower cost of capital
+    
+    **Arguments for lower rate:**
+    - You have strong valuation cap (cap matters more)
+    - Short time to expected qualified financing
+    - Investor is strategic, not just financial
+    
+    **When to accept higher rate:**
+    - Weak negotiating position
+    - Longer maturity date (18+ months)
+    - No valuation cap or high cap
+    
+    <Tip>
+      Don't spend too much energy negotiating interest rate. The difference between 4% and 6% over 18 months is minimal (~3% more dilution). Focus on cap and discount.
+    </Tip>
+  </Step>
+  
+  <Step title="Valuation cap">
+    **Most important economic term**
+    
+    **Setting the right cap:**
+    - Should be 50-70% of expected qualified financing valuation
+    - If you expect $12M Series A valuation, cap should be $6M-$8M
+    
+    **Too low:**
+    - Excessive founder dilution
+    - May give noteholders more % than you intended
+    - Hard to justify to later investors
+    
+    **Too high:**
+    - Doesn't protect noteholders adequately
+    - May result in notes not converting (if QF valuation is lower)
+    
+    **Negotiating approach:**
+    1. Model your expected Series A valuation
+    2. Propose cap at 60% of that
+    3. Be prepared to justify with traction, market size, comparables
+    4. Consider discount as trade-off (lower cap with smaller discount)
+  </Step>
+  
+  <Step title="Discount rate">
+    **Target: 15-20%**
+    
+    **Standard market terms:**
+    - 15% - Lower end, founder-friendly
+    - 20% - Most common, balanced
+    - 25% - Higher end, investor-friendly
+    
+    **Trade-offs:**
+    - Can negotiate lower discount for lower cap
+    - Can negotiate higher discount to avoid valuation cap
+    - Discount matters more if valuation grows slowly
+    
+    **Example trade:**
+    - Investor wants: $5M cap, 20% discount
+    - You propose: $6M cap, 15% discount
+    - Better for you, reasonable for investor
+  </Step>
+  
+  <Step title="Maturity date">
+    **Target: 18-24 months**
+    
+    **12 months:**
+    - Too short
+    - Doesn't give enough runway to raise qualified financing
+    - Avoid unless absolutely necessary
+    
+    **18 months:**
+    - Common and reasonable
+    - Gives time for one fundraising cycle
+    - Standard market term
+    
+    **24 months:**
+    - Safer for founders
+    - Allows for delays, pivots, market changes
+    - Preferred if you can get it
+    
+    **36 months:**
+    - Very long
+    - Investors may resist
+    - Only if you're very early or uncertain timeline
+    
+    <Warning>
+      Don't agree to 12-month maturity unless you have extremely high confidence in raising your qualified financing within 6-9 months. Give yourself buffer.
+    </Warning>
+  </Step>
+  
+  <Step title="Qualified financing threshold">
+    **Target: Size of your expected Series Seed or Series A**
+    
+    **Setting the threshold:**
+    
+    If you expect to raise:
+    - $1M-$2M seed round → Set threshold at $750K-$1M
+    - $3M-$5M Series A → Set threshold at $1.5M-$2M
+    - $5M+ Series A → Set threshold at $2M-$3M
+    
+    **Too low:**
+    - Could trigger on smaller friends/family round
+    - Forces conversion before you're ready
+    - May result in messy cap table
+    
+    **Too high:**
+    - May never trigger
+    - Notes reach maturity instead
+    - Creates crisis scenario
+    
+    **Standard exclusions:**
+    - Exclude convertible securities (notes/SAFEs) converting in round
+    - Exclude strategic partner investments
+    - Exclude option exercises
+    - Requires "principal purpose of raising capital"
+  </Step>
+</Steps>
+
+## Common convertible note mistakes
+
+<AccordionGroup>
+  <Accordion title="Multiple notes with inconsistent terms" icon="triangle-exclamation">
+    **The problem:**
+    - Issue notes at different times
+    - Different caps: $5M, $6M, $8M
+    - Different discounts: 15%, 20%, 25%
+    - Some with MFN, some without
+    - Creates mess at conversion
+    
+    **Why it's bad:**
+    - Hard to explain to Series A investors
+    - MFN provisions may trigger
+    - Different notes convert at different prices
+    - Complex cap table
+    
+    **The fix:**
+    - Set terms at beginning of note round
+    - Use same terms for all investors in that round
+    - Only change terms when starting a new distinct round
+    - Document rounds clearly ("Q1 2024 Note Round")
+  </Accordion>
+  
+  <Accordion title="Not modeling dilution" icon="calculator">
+    **The problem:**
+    - Issue $1.5M in notes with $6M cap
+    - Don't model conversion
+    - Surprised by dilution at Series A
+    
+    **Example:**
+    ```example
+    Notes: $1.5M at $6M cap
+    Series A: $3M at $12M pre-money
+    
+    Founder assumption: 20% dilution from Series A
+    Reality:
+    - Notes convert first at $6M cap = 25% dilution
+    - Then Series A dilutes the post-note cap table = 20%
+    - Total: ~40% dilution
+    ```
+    
+    **The fix:**
+    - Model cap table after note conversion
+    - Assume notes convert at their cap (worst case for founders)
+    - Calculate total dilution including both notes and equity
+    - Use cap table software: [Carta](https://carta.com), [Pulley](https://pulley.com)
+  </Accordion>
+  
+  <Accordion title="Letting notes reach maturity" icon="hourglass">
+    **The problem:**
+    - Notes mature before you raise qualified financing
+    - Now you face repayment obligation or forced conversion
+    - Creates crisis and distraction
+    
+    **What happens at maturity:**
+    - **If notes require repayment:** Company faces insolvency risk
+    - **If notes auto-convert:** May convert at unfavorable terms
+    - **If holders elect:** Uncertainty and negotiation required
+    
+    **The fix:**
+    - If maturity is approaching and you haven't raised QF:
+      1. Start negotiations with noteholders early (6 months before)
+      2. Options: (a) extend maturity, (b) convert now on agreed terms, (c) repay if possible
+      3. Get majority holders aligned first
+      4. Document any amendments properly
+    
+    <Warning>
+      Don't let notes mature without a plan. Start discussing with noteholders 6+ months in advance.
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Inadequate documentation" icon="file-circle-xmark">
+    **The problem:**
+    - Missing signed notes
+    - No wire confirmations
+    - No board approvals
+    - Missing Form D filings
+    - Sloppy records
+    
+    **Why it matters:**
+    - Series A investors will scrutinize in due diligence
+    - Missing documents can kill your financing
+    - Securities law violations can result
+    - Board approval problems can invalidate notes
+    
+    **The fix:**
+    For each note, maintain:
+    - ✓ Executed note agreement
+    - ✓ Wire transfer confirmation
+    - ✓ Board consent approving note issuance
+    - ✓ Investor questionnaire
+    - ✓ Form D filing (if required)
+    - ✓ Updated cap table
+    
+    Use services like [Clerky](https://www.clerky.com) or [Carta](https://carta.com) to manage documentation.
+  </Accordion>
+</AccordionGroup>
+
+## Convertible notes vs. SAFEs
+
+Choosing between notes and SAFEs depends on stage, investors, and situation.
+
+<Tabs>
+  <Tab title="Key differences">
+    | Feature | Convertible Note | SAFE |
+    |---------|------------------|------|
+    | **Instrument** | Debt | Future equity right |
+    | **Interest** | 2-8% annually | None |
+    | **Maturity** | 18-24 months | None |
+    | **Repayment obligation** | Yes | No |
+    | **Complexity** | Moderate | Simple |
+    | **Document length** | 15-20 pages | 5 pages |
+    | **Legal fees** | $5K-$15K | $2K-$5K |
+    | **Balance sheet** | Liability (debt) | Off balance sheet |
+    | **Best for** | Bridge rounds | Pre-seed/seed |
+    | **Investor familiarity** | Universal | Common in tech hubs |
+    | **Time to close** | 2-4 weeks | Days |
+  </Tab>
+  
+  <Tab title="When to use notes">
+    ✓ **Use convertible notes when:**
+    
+    1. **Bridge financing**
+       - Between Series A and Series B
+       - Clear timeline to next equity round (6-12 months)
+       - Existing investors participating
+    
+    2. **Conservative investors**
+       - Angels unfamiliar with SAFEs
+       - Prefer debt instruments for accounting/tax
+       - Want maturity date protection
+    
+    3. **International context**
+       - Some countries have unclear SAFE treatment
+       - Debt instruments better understood legally
+       - Tax and regulatory clarity matters
+    
+    4. **Larger amounts**
+       - $500K+ individual checks
+       - More diligence expected
+       - Investors want formal debt structure
+    
+    <Note>
+      If you're bridging between known equity rounds or dealing with institutional investors, convertible notes often make more sense than SAFEs.
+    </Note>
+  </Tab>
+  
+  <Tab title="When to use SAFEs">
+    ✓ **Use SAFEs when:**
+    
+    1. **Very early stage**
+       - Pre-seed or seed
+       - No clear timeline to Series A
+       - Want maximum simplicity
+    
+    2. **Tech/startup hubs**
+       - SF Bay Area, NYC, LA, Boston, Seattle
+       - Investors expect and prefer SAFEs
+       - Standard market instrument
+    
+    3. **Small amounts**
+       - $25K-$250K per investor
+       - Many small checks
+       - Want to close quickly
+    
+    4. **Speed critical**
+       - Need to close in days
+       - Minimal legal fees
+       - Simple terms
+    
+    See our [SAFE agreements guide](./safe-agreements) for full details.
+  </Tab>
+</Tabs>
+
+## Best practices
+
+<Steps>
+  <Step title="Use Series Seed documents">
+    Don't create custom note documents. Use standardized forms:
+    
+    - [Series Seed Convertible Note](https://github.com/CooleyLLP/seriesseed) (Cooley LLP)
+    - [Techstars Convertible Note](http://www.techstars.com) (Techstars)
+    - [CooleyGO generator](https://www.cooleygo.com/seednotes/)
+    
+    These are well-drafted, market-standard, and familiar to investors and lawyers.
+  </Step>
+  
+  <Step title="Model your cap table">
+    Before issuing notes:
+    - Build cap table model showing note conversion
+    - Assume notes convert at cap (worst case)
+    - Calculate total dilution through Series A
+    - Ensure founders retain adequate ownership
+    
+    Tools: [Carta](https://carta.com), [Pulley](https://pulley.com), [Capshare](https://www.capshare.com)
+  </Step>
+  
+  <Step title="Get board approval first">
+    Before executing your first note:
+    - Hold board meeting or obtain written consent
+    - Approve note form and maximum amount
+    - Authorize officers to execute notes
+    - Reserve shares for conversion
+    - Document in minutes/consent
+    
+    See our [board consent guide](./board-consent).
+  </Step>
+  
+  <Step title="Maintain excellent records">
+    For each note:
+    - Executed note agreement
+    - Investor questionnaire
+    - Wire confirmation
+    - Updated cap table
+    - Form D if required
+    
+    Keep everything organized in a data room for Series A diligence.
+  </Step>
+  
+  <Step title="Communicate with noteholders">
+    Even though notes don't require it:
+    - Send quarterly updates
+    - Notify of major milestones
+    - Give advance notice of qualified financing
+    - Keep investors engaged
+    
+    These people gave you capital when you needed it. Keep them informed.
+  </Step>
+  
+  <Step title="Plan conversion carefully">
+    Before raising your equity round:
+    - Calculate exactly how notes will convert
+    - Ensure qualified financing threshold is met
+    - Verify all note documentation is in order
+    - Brief Series A investors on note conversion
+    - Model post-conversion cap table
+    
+    No surprises at closing.
+  </Step>
+</Steps>
+
+## Resources and templates
+
+<CardGroup cols={2}>
+  <Card title="Series Seed documents" icon="download" href="https://github.com/CooleyLLP/seriesseed">
+    Complete convertible note package including term sheet, note form, and consents
+  </Card>
+  
+  <Card title="CooleyGO generator" icon="wand-magic-sparkles" href="https://www.cooleygo.com/seednotes/">
+    Automated document generator for Series Seed convertible notes
+  </Card>
+  
+  <Card title="Techstars documents" icon="rocket" href="http://www.techstars.com">
+    Techstars convertible note and bridge financing documents
+  </Card>
+  
+  <Card title="Cap table tools" icon="table">
+    Model note conversion:
+    - [Carta](https://carta.com)
+    - [Pulley](https://pulley.com)
+    - [Capshare](https://www.capshare.com)
+  </Card>
+</CardGroup>
+
+## Next steps
+
+<CardGroup cols={3}>
+  <Card title="Compare to SAFEs" icon="scale-balanced" href="./safe-agreements">
+    Understand the differences between convertible notes and SAFE agreements
+  </Card>
+  
+  <Card title="Equity term sheets" icon="file-contract" href="./term-sheets">
+    Learn about the qualified financing that triggers note conversion
+  </Card>
+  
+  <Card title="Board consent" icon="file-signature" href="./board-consent">
+    Get the board approvals you need before issuing convertible notes
+  </Card>
+</CardGroup>

@@ -1,0 +1,400 @@
+---
+title: "Investor Questionnaire"
+description: "Investor suitability questionnaire for verifying accredited investor status in Series Seed financings"
+---
+
+## Overview
+
+The Investor Suitability Questionnaire is used to verify that each investor qualifies as an "accredited investor" under federal securities laws. This qualification is essential for the Company to rely on exemptions from securities registration under Regulation D.
+
+<Warning>
+  Failing to properly verify accredited investor status can jeopardize the securities law exemptions and potentially require rescission of the investment. Companies must take reasonable steps to verify the information provided.
+</Warning>
+
+## Document Information
+
+**Available For**:
+- Equity Financing: [.md](https://github.com/CooleyLLP/seriesseed)
+- Convertible Note Financing: [.md](https://github.com/CooleyLLP/seriesseed/blob/master/notes/Series%20Seed%20Notes%20-%20Investor%20Questionnaire.md)
+
+**Purpose**: SEC Regulation D Rule 506 compliance  
+**Required**: Before accepting any investment
+
+## Why This Document is Critical
+
+<Accordion title="Regulation D Exemption">
+  **Registration Exemption**: Series Seed offerings rely on Rule 506 of Regulation D, which:
+  - Exempts offers from SEC registration requirements
+  - Permits unlimited capital raising
+  - Allows general solicitation (under 506(c) if all purchasers verified)
+  
+  **Accredited Investor Requirement**: Rule 506 requires all purchasers to be:
+  - Accredited investors, OR
+  - Sophisticated investors (limited to 35)
+  
+  **Verification**: Companies must have a "reasonable belief" that each investor is accredited
+  
+  <Note>
+    Rule 506(c) permits general solicitation but requires the company to take "reasonable steps to verify" accredited investor status using specific methods. Rule 506(b) permits self-certification but prohibits general solicitation.
+  </Note>
+</Accordion>
+
+<Accordion title="State Securities Laws">
+  Most state securities laws have similar requirements:
+  - Require accredited investor status for exemptions
+  - May have additional suitability requirements
+  - Failing to qualify can trigger state registration requirements
+  
+  **National Securities Markets Improvement Act**: Federal exemptions generally preempt state registration for 506 offerings, but states can still:
+  - Require notice filings
+  - Charge fees
+  - Enforce anti-fraud provisions
+</Accordion>
+
+## Document Structure
+
+The questionnaire includes:
+
+1. **Introduction**: Purpose and confidentiality
+2. **Accredited Investor Certifications**: For individuals and entities
+3. **Definitions**: Income and net worth
+4. **Signature**: Representation of accuracy
+
+## For Individual Investors
+
+<Accordion title="Income Test">
+  Individual qualifies as accredited if:
+  
+  **Income Threshold Met**:
+  - Individual income exceeded $200,000 in each of last two years, AND
+  - Reasonably expects income to exceed $200,000 this year
+  
+  OR
+  
+  - Joint income with spouse exceeded $300,000 in each of last two years, AND
+  - Reasonably expects joint income to exceed $300,000 this year
+  
+  **Income Definition** (from footnote):
+  Adjusted gross income for federal tax purposes, increased by:
+  - Tax exempt interest income
+  - Limited partnership losses claimed
+  - Depletion deductions
+  - IRA/Keogh contributions
+  - Alimony paid
+  - Section 1202 long-term capital gain reductions
+  
+  **Examples**:
+  ```
+  Example 1 - Qualifies:
+  2024 income: $250,000
+  2025 income: $275,000
+  2026 expected: $300,000
+  Result: Qualifies under income test
+  
+  Example 2 - Does Not Qualify:
+  2024 income: $180,000
+  2025 income: $220,000
+  2026 expected: $250,000
+  Result: Does not qualify (2024 below threshold)
+  ```
+</Accordion>
+
+<Accordion title="Net Worth Test">
+  Individual qualifies as accredited if:
+  
+  **Net Worth Threshold**: Net worth (individual or joint with spouse) exceeds $1,000,000
+  
+  **Net Worth Definition** (from footnote):
+  ```
+  Net Worth = Total Assets - Total Liabilities
+  
+  Where:
+  - Exclude primary residence value from assets
+  - Include mortgage on primary residence in liabilities only if 
+    and to the extent it exceeds residence value
+  - Include all other assets at fair market value:
+    * Other real estate
+    * Stock and options
+    * Personal property (furniture, jewelry, valuables)
+    * Cash and investments
+  ```
+  
+  **Primary Residence Treatment**:
+  ```
+  Scenario 1:
+  Primary residence value: $800,000
+  Mortgage balance: $500,000
+  Treatment: Exclude both (net zero effect)
+  
+  Scenario 2:
+  Primary residence value: $600,000
+  Mortgage balance: $700,000
+  Treatment: Include $100,000 as liability (underwater)
+  
+  Scenario 3:
+  Investment property value: $500,000
+  Mortgage balance: $300,000
+  Treatment: Include $200,000 equity as asset (not primary residence)
+  ```
+  
+  **Home Equity Line**: Secured by primary residence counts as liability only if:
+  - Used for purposes other than acquiring the residence, AND
+  - Incurred within 60 days before the investment
+  
+  <Note>
+    The Dodd-Frank Act changed net worth calculation to exclude primary residence. This prevents real estate appreciation alone from qualifying someone as accredited.
+  </Note>
+</Accordion>
+
+<Accordion title="Cannot Qualify">
+  If individual cannot make either representation, they check the third box:
+  
+  **Consequences**:
+  - Cannot invest under standard Rule 506(b) offering (unless one of limited 35 non-accredited)
+  - Cannot invest at all under Rule 506(c) offering
+  - Company may need to:
+    * Provide additional disclosures
+    * Limit number of non-accredited investors
+    * Use different exemption
+    * Register the offering
+</Accordion>
+
+## For Entity Investors
+
+<Accordion title="Trust with Assets over $5M">
+  Qualifies if:
+  - Entity is a trust
+  - Total assets exceed $5,000,000
+  - Purchase directed by person with knowledge and experience in financial/business matters
+  - Such person capable of evaluating merits and risks
+  
+  **Example**: Family trust with $7M in assets managed by experienced trustee
+</Accordion>
+
+<Accordion title="Financial Institutions">
+  Automatically qualified if entity is:
+  - Bank
+  - Insurance company
+  - Investment company registered under Investment Company Act of 1940
+  - Broker or dealer registered under Securities Exchange Act of 1934
+  - Business development company
+  - Small Business Investment Company (SBIC) licensed by SBA
+  - State employee benefit plan with assets over $5,000,000
+  - Private business development company (per Investment Advisers Act)
+  
+  <Note>
+    These institutions are deemed sufficiently sophisticated and financially secure to not require SEC protection.
+  </Note>
+</Accordion>
+
+<Accordion title="Employee Benefit Plans">
+  Qualifies if:
+  
+  **Option 1**: All investment decisions made by:
+  - Bank, OR
+  - Savings and loan association, OR
+  - Insurance company, OR
+  - Registered investment advisor
+  
+  **Option 2**: Plan has total assets over $5,000,000
+  
+  **Option 3**: Self-directed plan where all participants are accredited investors
+  
+  **Examples**: 401(k) plans, pension plans, profit-sharing plans
+</Accordion>
+
+<Accordion title="Entities with Assets over $5M">
+  Qualifies if entity is:
+  - Corporation
+  - Partnership
+  - Business trust
+  - Organization described in Section 501(c)(3) of Internal Revenue Code (nonprofits)
+  
+  AND:
+  - Not formed for specific purpose of acquiring the Securities
+  - Has total assets over $5,000,000
+  
+  <Warning>
+    Entity formed specifically to pool investments in this offering does not qualify under this category (must use "all equity owners" test instead).
+  </Warning>
+</Accordion>
+
+<Accordion title="All Equity Owners Accredited">
+  Entity qualifies if:
+  
+  **ALL equity owners** (each person/entity that owns equity in the investor entity) qualify under ANY of:
+  - Income test (for individuals): Over $200,000 / $300,000 joint
+  - Net worth test (for individuals): Over $1,000,000 excluding primary residence
+  - Any of the other accredited investor categories
+  
+  **Special Rule for Trusts**: For revocable living trust, look through to grantor(s)
+  
+  **Example**:
+  ```
+  Investment LLC with 3 members:
+  Member A: Individual with $1.5M net worth → Accredited
+  Member B: Individual with $250K annual income → Accredited  
+  Member C: Bank → Accredited
+  Result: LLC qualifies (all equity owners accredited)
+  
+  Investment LLC with 3 members:
+  Member A: Individual with $1.5M net worth → Accredited
+  Member B: Individual with $150K income, $600K net worth → Not Accredited
+  Member C: Bank → Accredited
+  Result: LLC does NOT qualify (not all equity owners accredited)
+  ```
+</Accordion>
+
+<Accordion title="Cannot Qualify">
+  If entity cannot make any of the above representations, check this box
+  
+  **Consequences**: Same as for individuals - may not be able to invest or may require special treatment
+</Accordion>
+
+## Additional Accredited Investor Categories
+
+The questionnaire doesn't include all possible accredited investor categories. Other qualifying criteria under Rule 501(a) include:
+
+<Accordion title="Not in Questionnaire">
+  **Knowledgeable Employees**: Of private fund
+  
+  **Directors/Officers**: Of the issuer (company selling securities)
+  
+  **Professional Certifications**: Holders of Series 7, Series 65, or Series 82 licenses in good standing
+  
+  **Family Offices**: With at least $5M in assets under management
+  
+  **Family Clients**: Of qualifying family offices
+  
+  **Entity Owned by Accredited Investors**: All owners are accredited (covered above)
+  
+  <Note>
+    If an investor qualifies under one of these categories, the company may need to prepare a customized certification or obtain alternative verification.
+  </Note>
+</Accordion>
+
+## Verification and Compliance
+
+<Accordion title="Rule 506(b) - Self Certification">
+  **Standard**: Company must have "reasonable belief" investor is accredited
+  
+  **Method**: Questionnaire self-certification generally sufficient if:
+  - Investor completes and signs questionnaire
+  - Company reviews for completeness and consistency
+  - Company has no knowledge of contrary facts
+  - Representation appears reasonable given investor's circumstances
+  
+  **No General Solicitation**: Cannot advertise offering publicly
+</Accordion>
+
+<Accordion title="Rule 506(c) - Verification Required">
+  **Standard**: Company must "take reasonable steps to verify" accredited investor status
+  
+  **Safe Harbor Methods**:
+  1. **Income**: Review IRS forms (W-2, 1099, tax return) for past two years plus written representation about current year
+  
+  2. **Net Worth**: Review bank statements, brokerage statements, tax assessments, appraisal reports, credit reports (dated within 3 months)
+  
+  3. **Third-Party Verification**: Registered broker-dealer, SEC-registered investment adviser, licensed attorney, or CPA provides written confirmation
+  
+  4. **Existing Investors**: If invested in prior 506(b) offering and company reasonably believes status unchanged
+  
+  **General Solicitation Permitted**: Can advertise publicly if verification completed
+  
+  <Warning>
+    Rule 506(c) verification requirements are more stringent. Questionnaire alone is not sufficient - must obtain supporting documentation or third-party verification.
+  </Warning>
+</Accordion>
+
+<Accordion title="Company's Responsibilities">
+  **Before Accepting Investment**:
+  1. Provide questionnaire to all prospective investors
+  2. Collect completed questionnaires before closing
+  3. Review for completeness and consistency
+  4. Verify information if using Rule 506(c)
+  5. Maintain records of verification
+  
+  **Confidentiality**:
+  - Questionnaire states information will be kept confidential
+  - May be provided to legal and financial advisors
+  - May be presented to establish securities law compliance
+  - Maintain in secure records
+  
+  **Retention**: Keep questionnaires permanently with corporate records for potential SEC or state examinations
+</Accordion>
+
+## Common Issues
+
+<Accordion title="Investor Doesn't Qualify">
+  **Options**:
+  1. **Limit to 35**: Rule 506(b) allows up to 35 non-accredited sophisticated investors
+  2. **Provide Disclosure**: Must provide extensive disclosures (similar to registered offering)
+  3. **Decline Investment**: Simplest approach for seed rounds
+  4. **Different Exemption**: Consider Regulation A+ or intrastate exemptions
+  
+  **Best Practice**: Series Seed documents assume all accredited investors; accepting non-accredited investors requires additional documentation
+</Accordion>
+
+<Accordion title="Investor Refuses to Complete">
+  **Cannot Invest**: Company cannot reasonably believe investor is accredited without information
+  
+  **Explanation**: Explain purpose is securities law compliance, not personal curiosity
+  
+  **Alternative**: If investor has relationship with company (e.g., director/officer), that status may qualify them independently
+</Accordion>
+
+<Accordion title="Information Appears Questionable">
+  **Examples**:
+  - Very young individual claiming high income
+  - Student or unemployed person claiming high net worth  
+  - Inconsistent information on other documents
+  
+  **Company's Duty**: Cannot turn blind eye to red flags
+  
+  **Actions**:
+  - Request supporting documentation
+  - Ask clarifying questions
+  - Consider declining investment if concerns persist
+  
+  <Warning>
+    Accepting investment from someone you know or suspect is not accredited can invalidate the exemption for the entire offering and expose the company to liability.
+  </Warning>
+</Accordion>
+
+<Accordion title="Entity Ownership Complications">
+  **Issue**: Determining if all equity owners of entity investor are accredited
+  
+  **Complex Structures**:
+  - Multi-tier entities
+  - Entities with many owners
+  - Foreign entities
+  
+  **Solutions**:
+  - Request entity to provide information about all ultimate beneficial owners
+  - Consider if entity qualifies under different category (e.g., $5M assets)
+  - For complex situations, consult with securities counsel
+</Accordion>
+
+## Best Practices
+
+1. **Collect Early**: Obtain questionnaire before accepting any investment commitment
+2. **Review Carefully**: Don't just file it away - actually review for completeness
+3. **Ask Questions**: If anything seems off, ask for clarification or documentation
+4. **Keep Confidential**: Store securely with other corporate records
+5. **Document Process**: Note your review and any follow-up in company records
+6. **Update if Needed**: If significant time passes before closing, consider requesting updated questionnaire
+7. **Consult Counsel**: When in doubt about an investor's status, ask securities lawyer
+
+## Related Documents
+
+- [Equity Term Sheet](/library/series-seed/term-sheet-equity)
+- [Convertible Note Term Sheet](/library/series-seed/term-sheet-convertible)
+- [Preferred Stock Investment Agreement](/library/series-seed/preferred-stock-investment)
+- [Convertible Promissory Note](/library/series-seed/convertible-note)
+
+## Additional Resources
+
+- [SEC Regulation D Rules](https://www.sec.gov/rules-regulations)
+- [Accredited Investor Definition (Rule 501)](https://www.sec.gov/education/capitalraising/building-blocks/accredited-investor)
+- [CooleyGO Resources](https://cooleygo.com)
+- [GitHub Repository](https://github.com/CooleyLLP/seriesseed)

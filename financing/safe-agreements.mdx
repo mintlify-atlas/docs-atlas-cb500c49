@@ -1,0 +1,738 @@
+---
+title: SAFE agreements
+description: Complete guide to Y Combinator's Simple Agreement for Future Equity (SAFE), including post-money SAFEs, conversion mechanics, and when to use them
+---
+
+The Simple Agreement for Future Equity (SAFE) is a financing instrument created by Y Combinator in 2013 that revolutionized early-stage startup investing. It's simpler than convertible notes, with no interest rate, maturity date, or repayment obligation.
+
+<Note>
+  SAFEs are not debt. They're not equity either. They're a contractual right to receive equity in the future, typically when you raise a priced equity round or have a liquidity event.
+</Note>
+
+## Why SAFEs exist
+
+Y Combinator created SAFEs to address problems with convertible notes:
+
+<AccordionGroup>
+  <Accordion title="Simplicity" icon="wand-magic-sparkles">
+    **Convertible notes are unnecessarily complex for early-stage rounds:**
+    - Interest rates that must be calculated
+    - Maturity dates that create artificial pressure
+    - Debt classification with repayment obligations
+    - Negotiation over multiple financial terms
+    
+    **SAFEs eliminate this complexity:**
+    - No interest calculation
+    - No maturity date
+    - No repayment obligation
+    - Fewer terms to negotiate
+    
+    The entire SAFE agreement is typically 5 pages compared to 20+ for a note.
+  </Accordion>
+  
+  <Accordion title="Founder-friendly terms" icon="handshake">
+    SAFEs were designed to be fair to founders:
+    
+    - No debt on your balance sheet
+    - No pressure from approaching maturity dates
+    - No requirement to pay interest if you're profitable
+    - Simple conversion mechanics
+    
+    This aligns investors with long-term company success rather than short-term debt repayment.
+  </Accordion>
+  
+  <Accordion title="Speed to close" icon="bolt">
+    With fewer terms to negotiate and simpler documents:
+    
+    - Term sheet discussion takes hours, not days
+    - Legal review is faster and cheaper
+    - No complex financial modeling needed
+    - Closing can happen in days
+    
+    This matters when you're trying to get back to building your product.
+  </Accordion>
+  
+  <Accordion title="Industry adoption" icon="users">
+    Since Y Combinator launched SAFEs:
+    
+    - Thousands of startups have raised capital via SAFEs
+    - Most top accelerators use SAFEs as their standard
+    - Angel investors widely accept them
+    - Many VCs use SAFEs for pre-seed/seed bridge rounds
+    
+    SAFEs have become the market standard for very early-stage investing.
+  </Accordion>
+</AccordionGroup>
+
+## SAFE variants
+
+Y Combinator offers four standard SAFE templates, each with different economic terms.
+
+<Tabs>
+  <Tab title="Valuation cap, no discount">
+    **Most common SAFE structure**
+    
+    The SAFE converts based on a valuation cap:
+    - Sets maximum conversion valuation
+    - No discount on equity round price
+    - Simple and clean
+    
+    **Example:**
+    - SAFE: $100K investment at $6M cap
+    - Series Seed: Raises $2M at $8M pre-money, $1.00/share
+    - SAFE converts at: $6M cap ÷ 8M shares = $0.75/share
+    - SAFE gets: $100K ÷ $0.75 = 133,333 shares
+    
+    **When to use:**
+    - Standard for most pre-seed and seed rounds
+    - Clean cap table math
+    - Easy to explain to all parties
+    
+    <Tip>
+      This is the most popular SAFE variant. If you're unsure which to use, start here.
+    </Tip>
+  </Tab>
+  
+  <Tab title="Discount, no cap">
+    **Discount-only SAFE**
+    
+    The SAFE converts at a discount to the equity round price:
+    - Typically 15-20% discount
+    - No valuation cap
+    - Rewards early investors with more shares
+    
+    **Example:**
+    - SAFE: $100K investment with 20% discount
+    - Series Seed: Raises $2M at $1.00/share
+    - SAFE converts at: $1.00 × 80% = $0.80/share
+    - SAFE gets: $100K ÷ $0.80 = 125,000 shares
+    
+    **When to use:**
+    - When company valuation is uncertain
+    - Later-stage SAFEs when valuation is more established
+    - Bridge financing before a known equity round
+    
+    <Warning>
+      Without a cap, SAFE holders have unlimited dilution risk if your valuation increases dramatically. Most investors prefer a cap.
+    </Warning>
+  </Tab>
+  
+  <Tab title="Cap and discount">
+    **Belt and suspenders approach**
+    
+    The SAFE converts at the better of:
+    - Price based on valuation cap, OR
+    - Discounted equity round price
+    
+    **Example:**
+    - SAFE: $100K at $5M cap with 20% discount
+    - Series Seed: $10M pre-money at $2.00/share (5M shares)
+    
+    **Option 1 - Cap:**
+    $5M cap ÷ 5M shares = $1.00/share
+    
+    **Option 2 - Discount:**
+    $2.00 × 80% = $1.60/share
+    
+    SAFE converts at $1.00/share (the lower price)
+    
+    **When to use:**
+    - Very early stage with uncertain trajectory
+    - Investor wants downside protection
+    - Higher-risk scenarios
+    
+    <Note>
+      Cap + discount SAFEs are more investor-favorable and less common in competitive markets.
+    </Note>
+  </Tab>
+  
+  <Tab title="MFN, no cap, no discount">
+    **Most Favored Nations SAFE**
+    
+    No cap or discount, but:
+    - If you issue SAFEs with better terms later, this SAFE automatically gets those terms
+    - Otherwise converts at equity round price (no benefit)
+    
+    **Example:**
+    - Early SAFE: $50K MFN only
+    - Later SAFE: $200K at $8M cap
+    - MFN triggers: Early SAFE gets $8M cap too
+    
+    **When to use:**
+    - Very earliest investors (friends/family)
+    - Rolling closings where terms may improve
+    - Situations where valuation cap is unknown
+    
+    **Why it's rare:**
+    - Provides minimal protection to investor
+    - No guaranteed discount or cap
+    - Only useful in specific scenarios
+    
+    <Warning>
+      MFN-only SAFEs give investors very little economic benefit. They're essentially betting that you'll offer better terms to later investors.
+    </Warning>
+  </Tab>
+</Tabs>
+
+## Post-money vs. pre-money SAFEs
+
+In 2018, Y Combinator updated their SAFE to use "post-money" valuation mechanics, which are clearer and more founder-friendly.
+
+<AccordionGroup>
+  <Accordion title="Pre-money SAFEs (legacy)" icon="clock-rotate-left">
+    **How they worked:**
+    - Cap was treated as pre-money valuation
+    - SAFE holders diluted each other
+    - Cap table math was confusing
+    - Could result in unexpected dilution
+    
+    **Example of the problem:**
+    ```example
+    3 SAFEs invest $100K each at $6M cap
+    Series Seed raises $2M at $10M pre-money
+    
+    Question: What % does each SAFE get?
+    Answer: Complicated, and SAFEs dilute each other
+    ```
+    
+    Y Combinator deprecated pre-money SAFEs in 2018. Don't use them.
+  </Accordion>
+  
+  <Accordion title="Post-money SAFEs (current)" icon="star">
+    **How they work:**
+    - Cap represents post-money valuation
+    - SAFE investors don't dilute each other
+    - Crystal clear ownership calculation
+    - Predictable cap table impact
+    
+    **Simple math:**
+    ```example
+    SAFE invests $1M at $10M post-money cap
+    
+    Ownership = Investment ÷ Cap
+              = $1M ÷ $10M
+              = 10% of company (precisely)
+    ```
+    
+    This is the SAFE you should use. It's simpler and more predictable for everyone.
+    
+    <Tip>
+      Always use post-money SAFEs. They're the current standard and eliminate confusion about dilution.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## How SAFEs convert
+
+SAFEs convert to equity when specific events occur. Understanding these mechanics is crucial.
+
+### Equity financing conversion
+
+<Steps>
+  <Step title="Equity financing triggers conversion">
+    When you raise a "Equity Financing" (typically any preferred stock round), all SAFEs automatically convert.
+    
+    **Qualified as Equity Financing:**
+    - Sale of preferred stock
+    - Principal purpose of raising capital
+    - Typically $1M+ minimum threshold (negotiable)
+    
+    **Not Equity Financing:**
+    - SAFE conversions themselves
+    - Stock option exercises
+    - Convertible note conversions
+    - Strategic partner stock issuance (usually)
+  </Step>
+  
+  <Step title="Calculate conversion price">
+    **Post-money SAFE math:**
+    
+    Conversion Price = Post-Money Valuation Cap ÷ Company Capitalization
+    
+    Where Company Capitalization includes:
+    - All outstanding stock (common and preferred)
+    - All outstanding options and promises (converted to common)
+    - All convertible securities (SAFEs, notes) as-converted
+    - All shares reserved under option pool
+    
+    **Example:**
+    - SAFE: $500K at $8M post-money cap
+    - At conversion, company has 8M shares outstanding (fully-diluted)
+    - Conversion price: $8M ÷ 8M shares = $1.00/share
+    - SAFE converts to: $500K ÷ $1.00 = 500,000 shares
+  </Step>
+  
+  <Step title="Determine which shares SAFE receives">
+    **Standard SAFE:** Converts to same stock as equity round investors
+    - If Series Seed Preferred is issued, SAFE gets Series Seed Preferred
+    - Same rights, preferences, and privileges
+    - Same liquidation preference per share
+    
+    **Shadow series possible:**
+    - If SAFE converts at lower price than equity round price
+    - Company may issue shadow series (e.g., "Series Seed-1")
+    - Identical rights to Series Seed
+    - Different liquidation preference per share (1x the SAFE price)
+  </Step>
+  
+  <Step title="Update cap table">
+    After SAFE conversion:
+    - SAFE holders become stockholders
+    - Receive all rights of that stock class
+    - Subject to all obligations (drag-along, etc.)
+    - SAFEs disappear from cap table
+    
+    <Tip>
+      Model your cap table with SAFEs converting before you price your equity round. You need to understand total dilution.
+    </Tip>
+  </Step>
+</Steps>
+
+### Liquidity event conversion
+
+<Tabs>
+  <Tab title="Acquisition or IPO">
+    If you're acquired or IPO before raising an equity round, SAFE holders receive:
+    
+    **Option 1 - Cash payment (most common):**
+    - SAFE converts immediately before transaction
+    - Converts at valuation cap (or discount if applicable)
+    - SAFE holder receives cash equal to their pro rata share
+    
+    **Example:**
+    - SAFE: $100K at $10M cap
+    - Acquisition: Company sells for $50M
+    - SAFE converts: $100K ÷ $10M = 1% of company
+    - SAFE receives: 1% × $50M = $500K
+    
+    **Option 2 - Stock in acquirer:**
+    - Less common
+    - SAFE converts to company stock first
+    - That stock then converts to acquirer stock per deal terms
+  </Tab>
+  
+  <Tab title="Dissolution">
+    If the company dissolves or winds down:
+    
+    **Standard SAFE:**
+    - SAFE holders receive any proceeds
+    - After debt, but before common stockholders
+    - Pro rata based on purchase amounts
+    - Treated similar to a liquidation preference
+    
+    **Practical reality:**
+    - Most dissolutions have no proceeds
+    - SAFE holders typically receive nothing
+    - SAFEs are high-risk investments
+    
+    <Warning>
+      SAFEs are extremely risky if the company fails. They're subordinate to debt and may receive nothing in a dissolution.
+    </Warning>
+  </Tab>
+</Tabs>
+
+## SAFE terms and negotiation
+
+While SAFEs are simpler than notes, you still need to negotiate key terms.
+
+### Key negotiable terms
+
+<CardGroup cols={2}>
+  <Card title="Valuation cap" icon="chart-line">
+    **What it is:** Maximum effective valuation for SAFE conversion
+    
+    **Typical ranges by stage:**
+    - Pre-seed: $4M - $8M
+    - Seed: $8M - $15M
+    - Bridge to Series A: $15M - $25M
+    
+    **Negotiation dynamics:**
+    - Higher cap = less dilution for founders
+    - Lower cap = better deal for investors
+    - Should reflect realistic Series A valuation
+    
+    <Tip>
+      Your SAFE cap should be 50-70% of your expected Series A valuation. If you expect to raise Series A at $20M pre-money, a $10-14M SAFE cap is reasonable.
+    </Tip>
+  </Card>
+  
+  <Card title="Discount rate" icon="percent">
+    **What it is:** Percentage discount to equity round price
+    
+    **Standard rates:**
+    - 15-20% most common
+    - 10-15% for later-stage SAFEs
+    - 20-25% for very early, high-risk
+    
+    **When to use:**
+    - With a cap: Provides floor and ceiling
+    - Without a cap: Only protection for investor
+    
+    <Note>
+      If you have both a cap and discount, investors get the better deal between the two at conversion.
+    </Note>
+  </Card>
+  
+  <Card title="Pro rata side letter" icon="rotate">
+    **What it is:** Right to invest pro rata in equity financing
+    
+    **Standard terms:**
+    - Available to investors of $50K-100K+
+    - Right to maintain ownership percentage
+    - Granted via separate side letter
+    - Optional and negotiable
+    
+    **Founder consideration:**
+    - Reduces available allocation in Series A
+    - May crowd out new investors
+    - Can be helpful with strategic investors
+    
+    See Y Combinator's [Pro Rata Side Letter](https://www.ycombinator.com/documents) template.
+  </Card>
+  
+  <Card title="MFN provision" icon="award">
+    **What it is:** Right to better terms if offered to future SAFE investors
+    
+    **How it works:**
+    - You issue SAFE A at $10M cap
+    - Later issue SAFE B at $8M cap
+    - SAFE A automatically gets $8M cap
+    
+    **Founder impact:**
+    - Limits flexibility in future SAFE terms
+    - Can't offer different terms to different investors
+    - Creates parity but reduces negotiating room
+    
+    <Warning>
+      MFN provisions complicate your fundraising. Try to avoid them or limit them to a short time window (e.g., 90 days).
+    </Warning>
+  </Card>
+</CardGroup>
+
+### Information and governance rights
+
+Standard Y Combinator SAFEs include minimal investor rights:
+
+<AccordionGroup>
+  <Accordion title="Information rights" icon="file-lines">
+    **Standard SAFE:** No information rights until conversion
+    
+    **Sometimes negotiated:**
+    - Annual financial statements
+    - Quarterly updates
+    - Major event notifications
+    
+    **Founder perspective:**
+    - Adds administrative burden
+    - Not standard for SAFEs
+    - Can add via side letter if needed
+    
+    Most SAFE investors don't ask for information rights. They'll get them after conversion.
+  </Accordion>
+  
+  <Accordion title="Board seats" icon="users">
+    **Standard SAFE:** No board seat or observer rights
+    
+    SAFEs don't convey governance rights. Investors become stockholders only after conversion.
+    
+    **Exception:** Very large SAFE investors ($1M+) sometimes negotiate:
+    - Board observer rights
+    - Granted via separate side letter
+    - Continue after conversion
+    
+    Generally resist board seats or observer rights for SAFE investors. Wait until Series A.
+  </Accordion>
+  
+  <Accordion title="Major decisions" icon="gavel">
+    **Standard SAFE:** SAFE holders don't vote on company decisions
+    
+    They're not stockholders until conversion. Company has full control.
+    
+    **Very rare exception:** Some large SAFEs include:
+    - Consent rights for major decisions
+    - Blocking rights for new SAFEs
+    - Approval rights for liquidity events
+    
+    <Warning>
+      Giving SAFE holders voting rights defeats the purpose of SAFEs. Avoid this.
+    </Warning>
+  </Accordion>
+</AccordionGroup>
+
+## SAFEs vs. convertible notes
+
+Choosing between SAFEs and convertible notes depends on your situation.
+
+<Tabs>
+  <Tab title="Choose SAFEs when">
+    ✅ **Use a SAFE if:**
+    
+    - **Very early stage** (pre-seed, accelerator)
+      - You need simplicity over complexity
+      - Valuation is highly uncertain
+      - You want to close quickly
+    
+    - **Founder-friendly market**
+      - Investors accept SAFEs as standard
+      - You have leverage in negotiations
+      - You're in a tech hub (SF, NYC, etc.)
+    
+    - **Speed is critical**
+      - You need to close in days, not weeks
+      - Legal fees must be minimal
+      - Term sheet negotiations should be brief
+    
+    - **Small amounts**
+      - Individual checks under $250K
+      - Many small investors
+      - Rolling closes over time
+    
+    <Tip>
+      SAFEs are the default for Y Combinator companies and most accelerator programs. If you're pre-seed or seed, start with SAFEs.
+    </Tip>
+  </Tab>
+  
+  <Tab title="Choose convertible notes when">
+    ✅ **Use convertible notes if:**
+    
+    - **Later stage bridge round**
+      - Between Series A and Series B
+      - Series A is closing but you need cash now
+      - Clear equity round coming within 12 months
+    
+    - **Conservative investors**
+      - Investors unfamiliar with SAFEs
+      - Prefer debt instruments for accounting
+      - Want maturity date protection
+    
+    - **International investors**
+      - Some countries have tax/regulatory issues with SAFEs
+      - Debt instruments are better understood
+      - Legal frameworks recognize notes better
+    
+    - **Larger amounts**
+      - Individual checks over $500K
+      - Institutional investors involved
+      - More diligence and documentation expected
+    
+    <Note>
+      Convertible notes make sense for bridge financings between equity rounds when timing is clear and amounts are substantial.
+    </Note>
+  </Tab>
+  
+  <Tab title="Key differences">
+    **Comparison table:**
+    
+    | Feature | SAFE | Convertible Note |
+    |---------|------|------------------|
+    | **Instrument type** | Future equity right | Debt |
+    | **Interest rate** | None | 2-8% annually |
+    | **Maturity date** | None | 12-24 months |
+    | **Repayment obligation** | No | Yes (if not converted) |
+    | **Document length** | 5 pages | 15-20 pages |
+    | **Legal fees** | $2-5K | $5-15K |
+    | **Time to close** | Days | Weeks |
+    | **Balance sheet** | Not debt | Liability |
+    | **Complexity** | Very simple | Moderate |
+    | **Market acceptance** | Standard for pre-seed/seed | Standard for bridges |
+    
+    **Bottom line:** SAFEs are simpler and faster. Notes are more traditional and familiar.
+  </Tab>
+</Tabs>
+
+## Common SAFE pitfalls
+
+Avoid these mistakes when using SAFEs:
+
+<AccordionGroup>
+  <Accordion title="Not modeling dilution" icon="triangle-exclamation">
+    **The problem:**
+    - Founders issue multiple SAFEs
+    - Don't model conversion scenarios
+    - Surprised by dilution at Series A
+    
+    **Example of the problem:**
+    ```example
+    Founder issues:
+    - $500K SAFE at $5M cap
+    - $750K SAFE at $6M cap
+    - $1M SAFE at $8M cap
+    Total: $2.25M on SAFEs
+    
+    Series A: $3M at $12M pre-money
+    
+    Founder assumption: ~20% dilution from Series A
+    Reality: ~35% dilution from SAFEs + Series A
+    ```
+    
+    **The fix:**
+    - Model your cap table after each SAFE
+    - Assume SAFEs convert at their caps
+    - Plan for total dilution, not just equity round dilution
+    - Use tools like [Carta](https://carta.com) or [Pulley](https://pulley.com)
+  </Accordion>
+  
+  <Accordion title="Raising too much on SAFEs" icon="money-bill-wave">
+    **The problem:**
+    - SAFEs seem like "free money" (no immediate dilution)
+    - Founders raise $2M+ on SAFEs before pricing
+    - Creates complex cap table at Series A
+    
+    **Why it's bad:**
+    - Series A investors see messy cap table
+    - SAFEs at multiple caps are confusing
+    - May require re-negotiating SAFE terms
+    - Can kill your Series A
+    
+    **General rules:**
+    - Don't raise more than $1.5M on SAFEs
+    - Consider pricing an equity round sooner
+    - Keep number of SAFEs manageable (fewer than 20 investors)
+    
+    <Warning>
+      If you need to raise more than $2M, strongly consider pricing an equity round instead of continuing to issue SAFEs.
+    </Warning>
+  </Accordion>
+  
+  <Accordion title="Inconsistent SAFE terms" icon="shuffle">
+    **The problem:**
+    - Issuing SAFEs with different caps over time
+    - Some with discounts, some without
+    - Some with MFN, some without
+    - Creates cap table mess
+    
+    **Example:**
+    ```example
+    - January: $250K SAFE at $6M cap, 20% discount, MFN
+    - March: $500K SAFE at $8M cap, no discount, MFN
+    - May: $300K SAFE at $10M cap, 15% discount, no MFN
+    
+    MFN triggers make this a nightmare to unwind.
+    ```
+    
+    **Best practice:**
+    - Set SAFE terms at the beginning
+    - Use same terms for all investors in that round
+    - Only change terms for next distinct round
+    - Document any exceptions clearly
+  </Accordion>
+  
+  <Accordion title="Not getting legal counsel" icon="gavel">
+    **The problem:**
+    - SAFEs seem simple
+    - Founders use them without legal review
+    - Don't understand conversion mechanics
+    - Problems emerge at equity round
+    
+    **What can go wrong:**
+    - Invalid securities law exemptions
+    - Missing required filings (Form D)
+    - Incorrect investor qualifications
+    - Improper board approvals
+    - Securities law violations
+    
+    **The fix:**
+    - Have a lawyer review your first SAFE
+    - Understand the mechanics thoroughly
+    - Ensure proper securities law compliance
+    - Get board approval for each SAFE
+    
+    <Tip>
+      While SAFEs are simpler than notes, you still need legal counsel for your first one. Once you understand them, subsequent SAFEs can be faster.
+    </Tip>
+  </Accordion>
+</AccordionGroup>
+
+## SAFE best practices
+
+<Steps>
+  <Step title="Use post-money SAFEs exclusively">
+    Always use Y Combinator's current post-money SAFE templates. Never use pre-money SAFEs.
+    
+    Download from [Y Combinator](https://www.ycombinator.com/documents).
+  </Step>
+  
+  <Step title="Start with cap-only SAFEs">
+    Unless investors specifically request a discount, use the "Valuation Cap, no Discount" SAFE.
+    
+    It's cleaner, simpler, and easier to explain to future investors.
+  </Step>
+  
+  <Step title="Set a realistic valuation cap">
+    Your cap should be 50-70% of your expected Series A valuation. If you think Series A will be $20M pre-money:
+    
+    - SAFE cap range: $10M - $14M
+    - Too low: You over-dilute
+    - Too high: Investors won't participate
+  </Step>
+  
+  <Step title="Keep excellent records">
+    For each SAFE, maintain:
+    - Signed SAFE agreement
+    - Wire transfer confirmation
+    - Board consent approving the SAFE
+    - Form D filing (if required)
+    - Updated cap table
+    
+    Use a service like [Carta](https://carta.com), [Pulley](https://pulley.com), or [Clerky](https://www.clerky.com) to manage SAFEs.
+  </Step>
+  
+  <Step title="Communicate with SAFE holders">
+    Even though SAFEs don't require information rights, keep investors updated:
+    
+    - Quarterly email updates
+    - Major milestone announcements
+    - Heads up before equity financing
+    
+    These investors believed in you early - keep them engaged.
+  </Step>
+  
+  <Step title="Plan your equity round">
+    Before raising your equity round:
+    - Model full dilution including all SAFEs
+    - Understand how SAFEs will convert
+    - Set Series A price that works with SAFE conversion
+    - Consider whether you need to adjust option pool
+    
+    Surprises at equity financing are bad for everyone.
+  </Step>
+</Steps>
+
+## Resources and templates
+
+<CardGroup cols={2}>
+  <Card title="Y Combinator SAFE templates" icon="download" href="https://www.ycombinator.com/documents">
+    Download all four SAFE variants and the Pro Rata Side Letter template
+  </Card>
+  
+  <Card title="SAFE User Guide" icon="book" href="https://www.ycombinator.com/docs/Post%20Money%20Safe%20User%20Guide.pdf">
+    Y Combinator's comprehensive guide to post-money SAFEs with examples
+  </Card>
+  
+  <Card title="Clerky SAFE service" icon="stamp" href="https://www.clerky.com">
+    Automated SAFE preparation and filing service for startups
+  </Card>
+  
+  <Card title="Cap table tools" icon="table">
+    Model SAFE conversion with:
+    - [Carta](https://carta.com)
+    - [Pulley](https://pulley.com)
+    - [Capshare](https://www.capshare.com)
+  </Card>
+</CardGroup>
+
+## Next steps
+
+<CardGroup cols={3}>
+  <Card title="Convertible notes" icon="file-invoice" href="./convertible-notes">
+    Compare SAFEs to convertible notes and understand when to use each
+  </Card>
+  
+  <Card title="Equity term sheets" icon="file-contract" href="./term-sheets">
+    Learn about equity financing and how SAFEs convert in priced rounds
+  </Card>
+  
+  <Card title="Cap table planning" icon="chart-pie">
+    Understand dilution and plan your cap table through multiple rounds
+  </Card>
+</CardGroup>
