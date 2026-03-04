@@ -1,0 +1,141 @@
+{
+  "projectType": "general",
+  "projectName": "Startup Starter Pack",
+  "projectDescription": "Collection of model legal documents for common startup setup and fundraising needs",
+  "theme": "linden",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": ["introduction", "getting-started"]
+          },
+          {
+            "group": "Founders",
+            "pages": [
+              "founders/founder-accord",
+              "founders/code-of-conduct"
+            ]
+          },
+          {
+            "group": "Formation",
+            "pages": [
+              "formation/incorporation",
+              "formation/llc-formation",
+              "formation/certificate-of-incorporation",
+              "formation/bylaws",
+              "formation/operating-agreement"
+            ]
+          },
+          {
+            "group": "Financing",
+            "pages": [
+              "financing/overview",
+              "financing/term-sheets",
+              "financing/safe-agreements",
+              "financing/convertible-notes",
+              "financing/shared-earnings-agreement",
+              "financing/stock-purchase-agreements",
+              "financing/board-consent",
+              "financing/stockholder-consent"
+            ]
+          },
+          {
+            "group": "Business Essentials",
+            "pages": [
+              "business/advisor-agreements",
+              "business/innovators-patent-agreement",
+              "business/mutual-nda",
+              "business/terms-of-use",
+              "business/privacy-policy",
+              "business/sales-agreement"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Document Library",
+        "groups": [
+          {
+            "group": "Series Seed",
+            "pages": [
+              "library/series-seed/overview",
+              "library/series-seed/term-sheet-equity",
+              "library/series-seed/term-sheet-convertible",
+              "library/series-seed/preferred-stock-investment",
+              "library/series-seed/convertible-note",
+              "library/series-seed/board-consent",
+              "library/series-seed/stockholder-consent",
+              "library/series-seed/investor-questionnaire"
+            ]
+          },
+          {
+            "group": "Y Combinator",
+            "pages": [
+              "library/yc/overview",
+              "library/yc/safe-agreements",
+              "library/yc/series-aa-documents"
+            ]
+          },
+          {
+            "group": "NVCA",
+            "pages": [
+              "library/nvca/overview",
+              "library/nvca/series-a-documents"
+            ]
+          },
+          {
+            "group": "Techstars",
+            "pages": [
+              "library/techstars/overview",
+              "library/techstars/series-aa-documents"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Standardized legal document templates for startup formation",
+    "Comprehensive financing documents (SAFE, convertible notes, equity)",
+    "Founder collaboration agreements and equity structures",
+    "Multiple document sets from industry-standard sources (Series Seed, YC, NVCA)",
+    "Business essentials (NDAs, advisor agreements, patent agreements)",
+    "OpenLaw integration for fast deployment",
+    "Documents available in multiple formats (.md, .doc, .pdf)"
+  ],
+  "publicApiSurface": [
+    "Founder Accord",
+    "Series Seed - Term Sheet (Equity)",
+    "Series Seed - Term Sheet (Convertible Note)",
+    "Series Seed - Preferred Stock Investment Agreement",
+    "Series Seed - Convertible Promissory Note",
+    "Series Seed - Board Consent",
+    "Series Seed - Stockholder Consent",
+    "Series Seed - Restated Certificate of Incorporation",
+    "Series Seed - Investor Questionnaire (Equity)",
+    "Series Seed - Investor Questionnaire (Convertible Note)",
+    "Y Combinator - SAFE (Valuation Cap, no Discount)",
+    "Y Combinator - SAFE (Discount, no Valuation Cap)",
+    "Y Combinator - SAFE (Valuation Cap and Discount)",
+    "Y Combinator - SAFE (MFN, no Cap, no Discount)",
+    "Y Combinator - Series AA Term Sheet",
+    "Y Combinator - Series AA Stock Purchase Agreement",
+    "Y Combinator - Series AA Board Consent",
+    "Y Combinator - Series AA Stockholder Consent",
+    "Shared Earnings Agreement",
+    "Founder Advisor Standard Template (FAST)",
+    "Innovator's Patent Agreement",
+    "Mutual Non-Disclosure Agreement (NDA)",
+    "NVCA Code of Conduct Policy",
+    "Contributor Covenant",
+    "Terms of Use",
+    "Privacy Policy",
+    "Sales Agreement (SaaS)"
+  ]
+}
